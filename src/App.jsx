@@ -29,7 +29,7 @@ import SecureRoute from './Pages/privateRoute/SecureRoute.jsx'
 function App() {
 
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <Routes>
         <Route path="/" element={<Login/> } />
         <Route path="/homepage" element={<SecureRoute> <ViewHomePage/> </SecureRoute> } />
