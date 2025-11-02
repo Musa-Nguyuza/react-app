@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "$2b$10$Wkj4hlCnb264F5zqUg3GnOwXIYgvDV.5VW.gllRvsjkXVlWBtuKN6"
+  },
+  {
+    "id": 2,
+    "username": "user",
+    "password": "$2b$10$ObyhfkTDV4MMHAt79Fw.yuY6O3O61w6sGfTkC1Ez/MRbs/BHHnzUS"
+  }
+]

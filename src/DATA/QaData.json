@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "Contact ID":"audit3)589571e8-5bbf-4c23-abc6-b8b6a3878",
+    "Policy Number":"FUN002824745",
+    "Call System": "Connex One",
+    "Call Type":"Servicing",
+    "Product Type":"Funeral Service",
+    "Product Subcat Type":"Funeral Service",
+    "Agent Name":"Sefoka Lerato",
+    "Risk Officer Name":"Phalane Mpho",
+    "Team Leader Name":"Msomi Francina",
+    "Date & Time of call": "4/8/2024 8:18 AM",
+    "Date & Time of call end": "4/8/2024 8:26 AM",
+    "Total call duration":"20"
+
+
+  },
+
+   {
+    "id": 2,
+    "Contact ID":"Connex One",
+    "Policy Number":"FUN008533555",
+    "Call System": "Connex One",
+    "Call Type":"Sales",
+    "Product Type":"Funeral Flexible Sales",
+    "Product Subcat Type":"Legacy",
+    "Agent Name":"Hobyane Sharon",
+    "Risk Officer Name":"Mokoena Amanda",
+    "Team Leader Name":"Dlamini Thando",
+    "Date & Time of call": "4/3/2024 12:00 AM",
+    "Date & Time of call end": "4/3/2024 12:00 AM",
+    "Total call duration":"20"
+
+
+  },
+
+   {
+    "id": 3,
+    "Contact ID":"Connex One",
+    "Policy Number":"SHS001067886",
+    "Call System": "Connex One",
+    "Call Type":"Sales",
+    "Product Type":"Stansure Sales",
+    "Product Subcat Type":"Motor",
+    "Agent Name":"Kunene Gabisile",
+    "Risk Officer Name":"Ncapai Zimkhitha",
+    "Team Leader Name":"Modikoane Nic",
+    "Date & Time of call": "4/8/2024 8:18 AM",
+    "Date & Time of call end": "4/8/2024 8:26 AM",
+    "Total call duration":"51"
+
+
+  }
+
+
+]

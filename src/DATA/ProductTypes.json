@@ -1,0 +1,164 @@
+{
+  "productTypes": [
+    {
+      "type": "Sales",
+      "categories": [
+        {
+          "name": "Stansure Sales",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "HOC Sales",
+          "subCategories": ["HOC Sales"]
+        },
+        {
+          "name": "Hollard Sales",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "Commercial Sales",
+          "subCategories": ["Bondsure","SBCOM", "Special Type", "BIZLaunch","Contractors All Risk","Goods In Transit","Business All Risk","Motor"]
+        },
+        {
+          "name": "Funeral Flexible Sales",
+          "subCategories": ["Legacy","Funeral Flexible Sales"]
+        },
+        {
+          "name": "Credit Life HLP Sales",
+          "subCategories": ["CCPP","Credit Life HLP Sales","DPP","VAFPP","PLPP"]
+        },
+        {
+          "name": "Flexi Life Sales",
+          "subCategories": ["Flexi Life Sales"]
+        }
+      ]
+    },
+    {
+      "type": "Servicing",
+      "categories": [
+        {
+          "name": "A&H Service",
+          "subCategories": ["A&H Service"]
+        },
+        {
+          "name": "Funeral Service",
+          "subCategories": ["Funeral Service"]
+        },
+        {
+          "name": "HOC Service",
+          "subCategories": ["HOC Service"]
+        },
+        {
+          "name": "Stansure Service",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "Hollard Service",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "Credit Life Service",
+          "subCategories": ["Credit Life"]
+        },
+        {
+          "name": "Flexi Life Service",
+          "subCategories": ["Flexi Life Service"]
+        },
+        {
+          "name": "Commercial Service Queries",
+          "subCategories": ["Renewals","Queries","Underwriting"]
+        }
+      ]
+    },
+
+    {
+      "type": "Retentions",
+      "categories": [
+        {
+          "name": "Funeral Retention",
+          "subCategories": ["Funeral Retention"]
+        },
+        {
+          "name": "Hollar Retention",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "Stansure Retention",
+          "subCategories": ["Motor", "Contents", "Caravan","Motorcycle","Watercraft","Computer","All Risk","Building"]
+        },
+        {
+          "name": "A&H Retention",
+          "subCategories": ["A&H Retention"]
+        },
+        {
+          "name": "HOC Retention",
+          "subCategories": ["HOC Retention"]
+        }
+      ]
+    },
+
+    {
+      "type": "Claims",
+      "categories": [
+        {
+          "name": "Credit Life Claims",
+          "subCategories": ["Credit Life Claims"]
+        },
+        {
+          "name": "Funeral Claims",
+          "subCategories": ["Funeral Claims"]
+        },
+        {
+          "name": "Funeral/Credit Life Claims CC",
+          "subCategories": ["Funeral/Credit Life Claims CC"]
+        }
+      ]
+    },
+
+    {
+      "type": "Complaints",
+      "categories": [
+        {
+          "name": "Funeral Complaints",
+          "subCategories": ["Funeral Complaints"]
+        },
+        {
+          "name": "Credit Life Complaints",
+          "subCategories": ["Credit Life Complaints"]
+        },
+        {
+          "name": "HOC Complaints",
+          "subCategories": ["HOC Complaints"]
+        }
+        ,{
+          "name": "Stansure Complaints",
+          "subCategories": ["Stansure Complaints"]
+        }
+        ,{
+          "name": "Multi Products Complaints",
+          "subCategories": ["Multi Products Complaints"]
+        }
+        ,{
+          "name": "HOC Complaints Process",
+          "subCategories": ["HOC Complaints Process"]
+        }
+        ,{
+          "name": "Stansure Complaints Process",
+          "subCategories": ["Stansure Complaints Process"]
+        }
+        ,{
+          "name": "Funeral Complaints Process",
+          "subCategories": ["Funeral Complaints Process"]
+        }
+        ,{
+          "name": "Credit Life Complaints Process",
+          "subCategories": ["Credit Life Complaints Process"]
+        }
+        ,{
+          "name": "Multi Products Complaints Process",
+          "subCategories": ["Multi Products Complaints Process"]
+        }
+      ]
+    }
+  ]
+}
