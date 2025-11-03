@@ -71,7 +71,7 @@ const FindingDetails = () =>
 
     updatedData[type][parseInt(index)] = cleanedFinding;
 
-    axios.put(`http://localhost:3001/api/dispute/data/${updatedData.id}`, updatedData)
+    axios.put(`https://riskapp-backend.onrender.com/api/dispute/data/${updatedData.id}`, updatedData)
         .then(() => {
         window.alert('Updated successfully');
         });

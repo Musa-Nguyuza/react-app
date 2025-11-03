@@ -8,6 +8,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import ProductData from '../../../DATA/ProductTypes.json'
 import dayjs from 'dayjs';
 import { CallLogContext } from '../../ContextPage/Context';
+import { red } from '@mui/material/colors';
 
 const prodTypes = ProductData.productTypes;
 
@@ -33,17 +34,18 @@ export default function FormQa() {
         e.preventDefault();
 
         const isCallSystemValid = formData.callSystem !== '';
-        const isDateTimeValid = formData.dateTime && dayjs(formData.dateTime).isValid();
+        const isDateTimeEndValid = formData.dateTimeEnd?.trim() && dayjs(formData.dateTimeEnd).isValid()
         const isCallDurationValid = !isNaN(Number(formData.callDuration)) && Number(formData.callDuration) > 0;
 
         setFormErrors((prev) => ({
             ...prev,
             callSystem: !isCallSystemValid,
-            dateTime: !isDateTimeValid,
-            callDuration: !isCallDurationValid
+            callDuration: !isCallDurationValid,
+
+
         }));
 
-        if (isCallSystemValid && isDateTimeValid && isCallDurationValid) {
+        if (isCallSystemValid && isCallDurationValid ) {
             const filters = {
             filter: formData.Selectedcategory?.name || '',
             subGrouping: formData.selectedSubCategory || '',
@@ -153,6 +155,7 @@ const handleTypeChange = (event, newValue) => {
                             variant="outlined" fullWidth/>
                         )}
                     />
+                
 
                     
                     </Grid>
@@ -205,6 +208,7 @@ const handleTypeChange = (event, newValue) => {
                         />
                     </Grid>
 
+                    
                     <Grid item size={formGrid} >
                          <LocalizationProvider dateAdapter={AdapterDayjs}>
                         <DateTimePicker
@@ -214,8 +218,7 @@ const handleTypeChange = (event, newValue) => {
                              onChange={(newValue) => setFormData((prev)=> ({...prev, dateTime: newValue }))}
                              renderInput={(params) => <TextField
                                 {...params}
-                                error={formErrors.dateTime}  
-                                helperText={formErrors.dateTime ? "Date & Time of call required":""} />}
+                                />}
                          sx={{
                             width:"100%"
                          }}/>
@@ -236,7 +239,6 @@ const handleTypeChange = (event, newValue) => {
                     <Grid item size={formGrid}>
                     <TextField
                         value={formData.policyNumber}
-                        error={formErrors.policyNumber}
                         onChange={(e) =>
                         setFormData((prev) => ({ ...prev, policyNumber: e.target.value }))
                         }
@@ -250,7 +252,8 @@ const handleTypeChange = (event, newValue) => {
                         <TextField 
                         value={formData.contactID}
                         onChange={(e)=> setFormData((prev)=> ({...prev, contactID: e.target.value }))}
-                        label="Contact ID" fullWidth></TextField>
+                        label="Contact ID"
+                         fullWidth></TextField>
                     </Grid>
 
                     <Grid item size={formGrid} >
@@ -298,7 +301,7 @@ const handleTypeChange = (event, newValue) => {
                     </LocalizationProvider>
                     </Grid>
 
-
+                        
                     <Grid item size={formGrid} >
                         <Autocomplete
                         options={secondCallOption}
@@ -307,6 +310,10 @@ const handleTypeChange = (event, newValue) => {
                         renderInput={(params) => 
                         <TextField 
                         {...params}
+                        helperText ={formErrors.secondCall ? " field can't be empty" : ""}
+                            FormHelperTextProps={{
+                                sx:{color:'red'}
+                            }}
                         label="Was there a second call?" fullWidth/>
                         }
                         />
@@ -320,7 +327,8 @@ const handleTypeChange = (event, newValue) => {
                         value={formData.additionalCall}
                         onChange={(e) =>setFormData((prev)=> ({...prev, additionalCall: e.target.value }))}
                         label="Additional Call IDs" 
-                        placeholder='Enter additional call IDs separated by /' fullWidth/>
+                        placeholder='Enter additional call IDs separated by /' 
+                        fullWidth/>
                     </Grid>}
                     
 

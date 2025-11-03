@@ -116,7 +116,7 @@ const Regulatory = () => {
   };
 
   const handleSubmit = async () => {
-    // ✅ Validate context data instead of local state
+    //✅ Validate context data instead of local state
     // const isComplete = regulatoryTableData.every((row) => {
     //   const hasCompliance = row.compliance === 'Yes' || row.compliance === 'No' || row.compliance === 'N/A';
     //   return hasCompliance;
@@ -152,10 +152,9 @@ const Regulatory = () => {
     <>
       {tableError && (
         <Typography color="error" sx={{ mb: 2, mt: 2 }}>
-          Please ensure all rows have a compliance selection.
+          Please ensure all compliant rows are filled.
         </Typography>
       )}
-      {regulatoryTableData.length + " "+ regulatorySummary["Yes"] }
       <TableContainer component={Paper} sx={{ maxHeight: 700, mt: 2 }}>
         <Table stickyHeader>
           <TableHead>
