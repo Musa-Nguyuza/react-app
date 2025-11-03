@@ -16,7 +16,7 @@ const ViewQa = () => {
 
 
 useEffect(() => {
-  fetch('http://localhost:3001/api/data')
+  fetch('https://riskapp-backend.onrender.com/api/data')
     .then((res) => res.json())
     .then((data)=> setData(data))
     .catch((err) => {

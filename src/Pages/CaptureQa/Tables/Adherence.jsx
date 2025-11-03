@@ -92,11 +92,11 @@ const Adherence = () =>
             };
 
             // ✅ Submit to /submit-form
-            const formResponse = await axios.post('http://localhost:3001/submit-form', formSubmissionData);
+            const formResponse = await axios.post('https://riskapp-backend.onrender.com/submit-form', formSubmissionData);
             console.log('✅ Form submission successful:', formResponse.data);
 
             // ✅ Submit to /api/dispute
-            const disputeResponse = await axios.post('http://localhost:3001/api/dispute', disputeData);
+            const disputeResponse = await axios.post('https://riskapp-backend.onrender.com/api/dispute', disputeData);
             console.log('✅ Dispute submission successful:', disputeResponse.data);
 
             alert('✅ Both submissions were successful!');

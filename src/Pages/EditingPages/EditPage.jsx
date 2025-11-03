@@ -46,7 +46,7 @@ export default function EditPage() {
 
     useEffect(() => {
       // Fetch the full object to extract Contact ID and Policy Number
-      fetch(`http://localhost:3001/api/data/${id}`)
+      fetch(`https://riskapp-backend.onrender.com/api/data/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setOriginalData((prevData) =>({
