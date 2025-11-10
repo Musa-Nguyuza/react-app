@@ -6,9 +6,8 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import {Link, useNavigate} from 'react-router-dom'
 import ProductData from '../../../DATA/ProductTypes.json'
-import dayjs from 'dayjs';
 import { CallLogContext } from '../../ContextPage/Context';
-import { red } from '@mui/material/colors';
+
 
 const prodTypes = ProductData.productTypes;
 
@@ -34,7 +33,6 @@ export default function FormQa() {
         e.preventDefault();
 
         const isCallSystemValid = formData.callSystem !== '';
-        const isDateTimeEndValid = formData.dateTimeEnd?.trim() && dayjs(formData.dateTimeEnd).isValid()
         const isCallDurationValid = !isNaN(Number(formData.callDuration)) && Number(formData.callDuration) > 0;
 
         setFormErrors((prev) => ({
@@ -109,8 +107,7 @@ const handleTypeChange = (event, newValue) => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                p: 4,
-                marginTop:"5%"
+                p: 4
             }}
             >
                 

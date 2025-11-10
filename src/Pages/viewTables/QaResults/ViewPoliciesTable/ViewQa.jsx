@@ -56,7 +56,7 @@ useEffect(() => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           InputLabelProps={{ shrink: true }}
-          sx={{ width: '20%', border: '1px solid black' }}
+          sx={{ width: '20%', border: '1px solid black', }}
           slotProps={{
             input: {
               startAdornment: (
