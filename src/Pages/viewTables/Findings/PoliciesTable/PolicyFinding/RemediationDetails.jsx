@@ -12,10 +12,9 @@ const statusOptions = ["Not Started","In Progress","Completed"]
 const AsignOptions =["Pontsho, Kgoete","Kulani, Baloyi","Ntsako, Maluleka","Tshepo, Seotimeng"]
 
 
-const FindingDetails = () =>
+const RemediationDetails = () =>
 {
-    const {id, type, index} = useParams();
-    const [finding, setFinding] = useState(null);
+    const {id} = useParams();
     const [fullData, setFullData] = useState(null);
 
     const [openAssignDialog, setOpenAssignDialog] = useState(false);
@@ -33,43 +32,14 @@ const FindingDetails = () =>
         return;
       }
 
-      const item = selectedFinding[type][parseInt(index)];
-      setFinding(item);
       setFullData(selectedFinding);
     });
-  }, [id, type, index]);
-
-  const handleChange = (field, value) => {
-    setFinding(prev => ({ ...prev, [field]: value }));
-  };
+  }, [id]);
 
     const handleSubmit = () => {
     const updatedData = { ...fullData };
-    const cleanedFinding = { ...finding };
 
-    // List of fields to inject into the correct finding table
-    const nestedFields = ["Assigned",'findingType', 'remedialAction',"findingRemediated","conquenceManagementRequired",
-        "RiskCheckConsequencesManagement", "reviewComment", "discomComment", "status"
-    ];
 
-    if (cleanedFinding[type]) {
-        cleanedFinding[type] = cleanedFinding[type].map((entry) => {
-        const updatedEntry = { ...entry };
-        nestedFields.forEach((field) => {
-            if (cleanedFinding[field] !== undefined) {
-            updatedEntry[field] = cleanedFinding[field];
-            }
-        });
-        return updatedEntry;
-        });
-
-        // Remove nested fields from the root level
-        nestedFields.forEach((field) => {
-        delete cleanedFinding[field];
-        });
-    }
-
-    updatedData[type][parseInt(index)] = cleanedFinding;
 
     axios.put(`http://localhost:3001/api/dispute/data/${updatedData.id}`, updatedData)
         .then(() => {
@@ -78,14 +48,14 @@ const FindingDetails = () =>
     };
 
 
-  if (!finding) return <div style={{margin:'10%'}}>Loading...</div>;
+  if (!fullData) return <div style={{margin:'10%'}}>Loading...</div>;
   
 
 
   
-    // const handleDataChange = (field, value) => {
-    //     setFullData(prev => ({ ...prev, [field]: value }));
-    // };
+    const handleDataChange = (field, value) => {
+        setFullData(prev => ({ ...prev, [field]: value }));
+    };
 
 
     return(
@@ -110,25 +80,22 @@ const FindingDetails = () =>
                     </Grid>
 
                     <Grid item size={{lg:6, sm:12}}>
-                        <TextField label="Question" 
+                        <TextField label="Action Item" 
                         multiline
                         rows={4.2}
-                        InputLabelProps={{shrink:true}} value={finding.phrase} fullWidth/>
+                        InputLabelProps={{shrink:true}} value={fullData.actionItem} fullWidth/>
                     </Grid>
 
                      <Grid item size={{lg:6, sm:12}}>
                         
                         <TextField label="Policy Number" InputLabelProps={{shrink:true}} value={fullData.policyNumber} fullWidth/>
             
-                        <TextField label="POE" 
+                        <TextField label="Date & Time of Remediation" 
                         InputLabelProps={{shrink:true}} 
-                        value={finding.comment} sx={{mt:2}}fullWidth/>
-                    </Grid>
-                    <Grid item size={{lg:4,sm:6}}>
-                        <TextField label="Created On" InputLabelProps={{shrink:true}} value={fullData.createdOn}fullWidth/>
+                        value={fullData.createdOn} sx={{mt:2}}fullWidth/>
                     </Grid>
                    
-                    <Grid item size={{lg:4,sm:6}}>
+                    {/* <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Call Type" InputLabelProps={{shrink:true}} value={fullData.callType} fullWidth/>
                     </Grid>
                     <Grid item size={{lg:4,sm:6}}>
@@ -142,13 +109,13 @@ const FindingDetails = () =>
                     </Grid>
                     <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Agent Name" InputLabelProps={{shrink:true}} value={fullData.AgentName} fullWidth/>
-                    </Grid>
+                    </Grid> */}
                     <Grid item size={{lg:4,sm:6}}>
-                        <TextField label="Risk Officer" InputLabelProps={{shrink:true}} value={fullData.riskOfficer} fullWidth/>
+                        <TextField label="Date & Time of Due Date" InputLabelProps={{shrink:true}} value={fullData.dateAndTimeOfDueDate} fullWidth/>
                     </Grid>
-                    <Grid item size={{lg:4,sm:6}}>
+                    {/* <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Team Leader" InputLabelProps={{shrink:true}} value={fullData.teamLeader} fullWidth/>
-                    </Grid>
+                    </Grid> */}
                     <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Call Duration" InputLabelProps={{shrink:true}} value={fullData.callDuration} fullWidth/>
                     </Grid>
@@ -158,18 +125,18 @@ const FindingDetails = () =>
                     <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Date & Time of call End" InputLabelProps={{shrink:true}} value={fullData.dateTimeEnd} fullWidth/>
                     </Grid>
-                    <Grid item size={{lg:4,sm:6}}>
+                    {/* <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Was there a second call?" InputLabelProps={{shrink:true}} value={fullData.secondCall} fullWidth/>
                     </Grid>
                     <Grid item size={{lg:4,sm:6}}>
                         <TextField label="Additional Call IDs" InputLabelProps={{shrink:true}} value={fullData.additionalCall} fullWidth/>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid item size={{lg:4,sm:6}}>
                         <Autocomplete
                             options={findingTypeoptions}
-                            value={findingTypeoptions.includes(finding.findingType) ? finding.findingType : null}
-                            onChange={(event, newValue) => handleChange('findingType', newValue)}
+                            value={findingTypeoptions.includes(fullData.findingType) ? fullData.findingType : null}
+                            onChange={(event, newValue) => handleDataChange('findingType', newValue)}
                             renderInput={(params) => (
                                 <TextField {...params} label="Finding Type" fullWidth/>
                             )}
@@ -178,8 +145,8 @@ const FindingDetails = () =>
                     <Grid item size={{lg:4, sm:6}}>
                         <Autocomplete
                             options={statusOptions}
-                            value={statusOptions.includes(finding.status) ? finding.status : null}
-                            onChange={(event, newValue) => handleChange('status', newValue)}
+                            value={fullData.Status}
+                            onChange={(event, newValue) => handleDataChange('Status', newValue)}
                             renderInput={(params) => (
                                 <TextField {...params} label="Status" fullWidth/>
                             )}
@@ -192,8 +159,8 @@ const FindingDetails = () =>
                     <Grid item size={{md:12}} display={"flex"}>
                         <Typography sx={{ml:3, mt:1, mr:2}}>I confirm that the finding has been remediated</Typography>
                         <FormControl component="fieldset">
-                            <RadioGroup row value={finding.findingRemediated}                        
-                                onChange={e => handleChange('findingRemediated', e.target.value)}
+                            <RadioGroup row value={fullData.findingRemediated}                        
+                                onChange={e => handleDataChange('findingRemediated', e.target.value)}
                             >
                             <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
                             <FormControlLabel value="No" control={<Radio />} label="No" />
@@ -206,8 +173,8 @@ const FindingDetails = () =>
                     </Grid>
                     <Grid item size={{md:9,sm:12}}>
                         <TextField
-                        value={finding.remedialAction}
-                        onChange={e => handleChange('remedialAction', e.target.value)}
+                        value={fullData.remedialAction}
+                        onChange={e => handleDataChange('remedialAction', e.target.value)}
                         id="outlined-multiline-static"
                         multiline
                         rows={2}
@@ -225,8 +192,8 @@ const FindingDetails = () =>
                     </Grid>
                     <Grid item size={{md:2,sm:12}}>
                         <FormControl component="fieldset">
-                            <RadioGroup row value={finding.RiskCheckConsequencesManagement} 
-                            onChange={e => handleChange('RiskCheckConsequencesManagement', e.target.value)} >
+                            <RadioGroup row value={fullData.RiskCheckConsequencesManagement} 
+                            onChange={e => handleDataChange('RiskCheckConsequencesManagement', e.target.value)} >
                             <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
                             <FormControlLabel value="No" control={<Radio />} label="No" />
                             </RadioGroup>
@@ -236,8 +203,8 @@ const FindingDetails = () =>
                     <Grid item size={{md:12,sm:12}} >
                         <Autocomplete
                         options={consequencesOptions}
-                        value={consequencesOptions.includes(finding.conquenceManagementRequired) ? finding.conquenceManagementRequired : null}
-                        onChange={(event, newValue) => handleChange('conquenceManagementRequired', newValue)}
+                        value={consequencesOptions.includes(fullData.conquenceManagementRequired) ? fullData.conquenceManagementRequired : null}
+                        onChange={(event, newValue) => handleDataChange('conquenceManagementRequired', newValue)}
                         renderInput={(params) => (
                             <TextField {...params} label="Consequence Management Required?" sx={{width:'50%'}} 
                             InputLabelProps={{shrink:true}}
@@ -268,8 +235,8 @@ const FindingDetails = () =>
                     </Grid>
                     <Grid item size={{md:10,sm:12}}>
                         <TextField
-                        value={finding.reviewComment}
-                        onChange={e => handleChange('reviewComment', e.target.value)}
+                        value={fullData.reviewComment}
+                        onChange={e => handleDataChange('reviewComment', e.target.value)}
                         id="outlined-multiline-static"
                         multiline
                         rows={2}
@@ -281,8 +248,8 @@ const FindingDetails = () =>
                     </Grid>
                     <Grid item size={{md:10,sm:12}}>
                         <TextField
-                        value={finding.discomComment}
-                        onChange={e => handleChange('discomComment', e.target.value)}
+                        value={fullData.discomComment}
+                        onChange={e => handleDataChange('discomComment', e.target.value)}
                         id="outlined-multiline-static"
                         multiline
                         rows={2}
@@ -319,8 +286,8 @@ const FindingDetails = () =>
                 <Autocomplete
                     sx={{mt:1}}
                     options={AsignOptions}
-                    value={finding.Assigned}
-                    onChange={(event, newValue) => handleChange('Assigned', newValue)}
+                    value={fullData.Assigned}
+                    onChange={(event, newValue) => handleDataChange('Assigned', newValue)}
                     renderInput={(params) => (
                         <TextField {...params} label="Assign" fullWidth/>
                     )}
@@ -337,5 +304,5 @@ const FindingDetails = () =>
         
     );
 }
-export default FindingDetails;
+export default RemediationDetails;
 

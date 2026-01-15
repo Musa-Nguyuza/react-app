@@ -76,12 +76,12 @@ const Homepage =() => {
                 boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)"
             }}>
                 <Box component="img" src={logo} alt="Logo" 
-                sx={{ width:"80%", height: '17%', alignSelf:"center",mb:10}} />
+                sx={{ width:"60%", height: '17%', alignSelf:"center",mb:10}} />
 
                 
                <Typography
                     sx={{
-                    fontSize: "1.5rem",
+                    fontSize: {sm:"2rem"},
                     fontWeight: "bold",
                     color: "white",
                     flexGrow: 1,     // takes available space

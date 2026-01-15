@@ -29,7 +29,7 @@ const ViewPhrase = () => {
 
   useEffect(() => {
     // Fetch the full object to extract Contact ID and Policy Number
-    fetch(`https://riskapp-backend.onrender.com/api/data/${id}`)
+    fetch(`http://localhost:3001/api/data/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setMetaData({
@@ -62,7 +62,7 @@ const ViewPhrase = () => {
   //get the id/tablename and index in dispute.json
 const handleViewFinding = async (phrase, policyNumber) => {
   try {
-    const res = await fetch('https://riskapp-backend.onrender.com/api/find-phrase', {
+    const res = await fetch('http://localhost:3001/api/find-phrase', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ phrase, policyNumber })
@@ -70,8 +70,10 @@ const handleViewFinding = async (phrase, policyNumber) => {
 
     const data = await res.json();
 
-    if (res.ok && data.id && data.tableName && data.index !== undefined) {
-      navigate(`/edit-finding/${data.id}/${data.tableName}/${data.index}`);
+    // if (res.ok && data.id && data.tableName && data.index !== undefined) {
+    //   navigate(`/edit-finding/${data.id}/${data.tableName}/${data.index}`);
+    if (res.ok && data.id !== undefined) {
+      navigate(`/edit-finding/${data.id}`);
     } else {
       console.error('Invalid response:', data);
     }

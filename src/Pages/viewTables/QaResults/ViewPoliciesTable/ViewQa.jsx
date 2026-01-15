@@ -16,7 +16,7 @@ const ViewQa = () => {
 
 
 useEffect(() => {
-  fetch('https://riskapp-backend.onrender.com/api/data')
+  fetch('http://localhost:3001/api/data')
     .then((res) => res.json())
     .then((data)=> setData(data))
     .catch((err) => {
@@ -102,13 +102,13 @@ useEffect(() => {
                   >
                     View
                   </Button>
-                  <Button
+                  {/* <Button
                     variant="contained"
                     color="secondary"
                     onClick={() => navigate(`/edit/${item.id}`)}
                   >
                     Edit
-                  </Button>
+                  </Button> */}
                 </TableCell>
               </TableRow>
             ))}

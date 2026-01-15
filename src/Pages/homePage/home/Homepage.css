@@ -19,3 +19,18 @@ body {
   background-color: black;
   overflow: hidden;
 }
+
+@media screen and (min-width:0px)
+{
+  .main_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width:900px)
+{
+  .main_main{
+    display: block;
+  }
+}

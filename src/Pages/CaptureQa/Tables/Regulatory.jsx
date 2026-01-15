@@ -13,6 +13,7 @@ import {
   TablePagination,
   Button,
   Typography,
+  TableFooter,
 } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
 import { CallLogContext } from "../../ContextPage/Context";
@@ -26,6 +27,7 @@ const Regulatory = () => {
   const { tableData } = useFetchTableData(id, 'Regulatory Table');
 
   const dataSource = id ? tableData : data;
+
   
 
   // ✅ Using context data instead of local state
@@ -42,6 +44,7 @@ const Regulatory = () => {
     setCustomerExperienceTableData,
     setRemediationRiskTableData,
   } = useContext(CallLogContext);
+
   
 
   const [selectedFilters, setSelectedFilters] = useState({
@@ -91,19 +94,23 @@ const Regulatory = () => {
       const mappedData = filteredData.map((item) => ({
         phrase: item["Phrase"],
         category: item["Category Phrase List"],
-        compliance: "",
+        compliance: "N/A",
         comment: "",
       }));
 
       setRegulatoryTableData(id? dataSource : mappedData);
+
+     
     }
-  }, [selectedFilters, setRegulatoryTableData, regulatoryTableData, holdFilter, setHoldFilter, setMarketConductTableData, setProductRiskTableData, setProcessTableData, setCustomerExperienceTableData, setRemediationRiskTableData, dataSource, id]);
+  }, [selectedFilters, setRegulatoryTableData, regulatoryTableData, holdFilter, setHoldFilter, setMarketConductTableData, setProductRiskTableData, setProcessTableData, setCustomerExperienceTableData, setRemediationRiskTableData, dataSource, id, setRegulatorySummary]);
+
 
   // ✅ Update context data directly instead of local state
   const handleChange = (index, field, value) => {
     const updated = [...regulatoryTableData];
     updated[index][field] = value;
     setRegulatoryTableData(updated);
+
   };
 
   const handleChangePage = (_, newPage) => {
@@ -114,6 +121,17 @@ const Regulatory = () => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
+
+  //✅ count values
+  useEffect(()=>{
+     const summary = { Yes: 0, No: 0, "N/A": 0 };
+    regulatoryTableData.forEach((row) => {
+      if (summary[row.compliance] !== undefined) {
+        summary[row.compliance]++;
+      }
+    });
+    setRegulatorySummary(summary);
+  })
 
   const handleSubmit = async () => {
     //✅ Validate context data instead of local state
@@ -127,15 +145,6 @@ const Regulatory = () => {
     //   return;
     // }
 
-    // ✅ Count compliant values
-    const summary = { Yes: 0, No: 0, "N/A": 0 };
-    regulatoryTableData.forEach((row) => {
-      if (summary[row.compliance] !== undefined) {
-        summary[row.compliance]++;
-      }
-    });
-    setRegulatorySummary(summary);
-    //done counting here
 
     setTableError(false);
     navigate(id ? `/MarketConduct/${id}`:"/MarketConduct" );
@@ -148,6 +157,8 @@ const Regulatory = () => {
   );
 
 
+
+
   return (
     <>
       {tableError && (
@@ -155,8 +166,10 @@ const Regulatory = () => {
           Please ensure all compliant rows are filled.
         </Typography>
       )}
+      
+      
       <TableContainer component={Paper} sx={{ maxHeight: 700, mt: 2 }}>
-        <Table stickyHeader>
+        <Table stickyHeader >
           <TableHead>
             <TableRow>
               <TableCell>
@@ -181,18 +194,20 @@ const Regulatory = () => {
                   <TableCell sx={{ width: "50%" }}>{row.phrase}</TableCell>
                   <TableCell>{row.category}</TableCell>
                   <TableCell>
+                    {row.compliance===""?row.compliance="N/A":
                     <Select
-                      value={row.compliance}
+                    
+                      value={row.compliance }
                       onChange={(e) =>
                         handleChange(realIndex, "compliance", e.target.value)
                       }
                       displayEmpty
                       fullWidth
                     >
-                      <MenuItem value="N/A">N/A</MenuItem>
+                      <MenuItem value="N/A"> N/A</MenuItem>
                       <MenuItem value="Yes">Yes</MenuItem>
                       <MenuItem value="No">No</MenuItem>
-                    </Select>
+                    </Select> }
                   </TableCell>
                   <TableCell>
                     <TextField
@@ -208,7 +223,30 @@ const Regulatory = () => {
               );
             })}
           </TableBody>
+          <TableHead sx={{
+            position: "sticky",
+            bottom: 0,
+            backgroundColor: "white", // ensure it doesn’t overlap content
+            zIndex: 2, // keep it above body rows
+          }}
+            >
+            <TableRow>
+              <TableCell>
+                <strong>Total Phrases: {regulatoryTableData.length}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total compliant Phrases: {regulatorySummary['Yes']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Non-Compliant: {regulatorySummary['No']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Completed Phrases: {regulatoryTableData.length}</strong>
+              </TableCell>
+            </TableRow>
+          </TableHead>
         </Table>
+        
       </TableContainer>
 
       <TablePagination

@@ -34,6 +34,8 @@ const Homebuttons = () => {
               LinkComponent={Link}
               to={to}
               sx={{
+                textWrap:'nowrap',
+                px:{sm:10, md:0},
                 py: { xs: 1.5, md: 2.5 },   // smaller padding on small screens
                 fontSize: { xs: '0.9rem', md: '1.1rem' }, // responsive text size
                 borderRadius: 2,

@@ -18,7 +18,7 @@ const ProcessQa = () => {
   const dataSource = id ? tableData : data;
 
   // ✅ Using context data instead of local state
-  const { processTableData, setProcessTableData,setProcessSummary } = useContext(CallLogContext);
+  const { processTableData, setProcessTableData,setProcessSummary, processSummary } = useContext(CallLogContext);
 
   const [selectedFilters, setSelectedFilters] = useState({ filter: '', grouping: '' });
   const [tableError, setTableError] = useState(false);
@@ -48,7 +48,7 @@ const ProcessQa = () => {
     const mappedData = filteredData.map((item) => ({
       phrase: item.Phrase,
       category: item.Category,
-      compliance: '',
+      compliance: 'N/A',
       comment: ''
     }));
 
@@ -56,6 +56,20 @@ const ProcessQa = () => {
     setProcessTableData(id? dataSource : mappedData);
   };
   }, [dataSource, id, processTableData.length, selectedFilters, setProcessTableData]);
+
+  useEffect(()=>{
+    
+    // ✅ Count compliant values
+    const summary = {Yes: 0, No: 0 , 'N/A': 0};
+    processTableData.forEach((row)=>{
+      if (summary[row.compliance] !== undefined)
+      {
+        summary[row.compliance]++;
+      }
+    })
+    setProcessSummary(summary);
+    //done counting here
+  })
 
   // ✅ Update context data directly instead of local state
   const handleChange = (index, field, value) => {
@@ -85,16 +99,6 @@ const ProcessQa = () => {
     //   return;
     // }
 
-    // ✅ Count compliant values
-    const summary = {Yes: 0, No: 0 , 'N/A': 0};
-    processTableData.forEach((row)=>{
-      if (summary[row.compliance] !== undefined)
-      {
-        summary[row.compliance]++;
-      }
-    })
-    setProcessSummary(summary);
-    //done counting here
 
     setTableError(false);
     navigate(id ? `/Customer-Experience-Qa/${id}` : '/Customer-Experience-Qa');
@@ -133,6 +137,7 @@ const ProcessQa = () => {
                   <TableCell sx={{ width: "50%" }}>{row.phrase}</TableCell>
                   <TableCell>{row.category}</TableCell>
                   <TableCell>
+                    {row.compliance===""?row.compliance="N/A":
                     <Select
                       value={row.compliance}
                       onChange={(e) => handleChange(realIndex, 'compliance', e.target.value)}
@@ -142,7 +147,7 @@ const ProcessQa = () => {
                       <MenuItem value="N/A">N/A</MenuItem>
                       <MenuItem value="Yes">Yes</MenuItem>
                       <MenuItem value="No">No</MenuItem>
-                    </Select>
+                    </Select>}
                   </TableCell>
                   <TableCell>
                     <TextField
@@ -156,6 +161,28 @@ const ProcessQa = () => {
               );
             })}
           </TableBody>
+          <TableHead sx={{
+            position: "sticky",
+            bottom: 0,
+            backgroundColor: "white", // ensure it doesn’t overlap content
+            zIndex: 2, // keep it above body rows
+          }}
+            >
+            <TableRow>
+              <TableCell>
+                <strong>Total Phrases: {processTableData.length}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total compliant Phrases: {processSummary['Yes']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Non-Compliant: {processSummary['No']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Completed Phrases: {processTableData.length}</strong>
+              </TableCell>
+            </TableRow>
+          </TableHead>
         </Table>
       </TableContainer>
 

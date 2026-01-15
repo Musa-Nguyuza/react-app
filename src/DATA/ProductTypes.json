@@ -67,6 +67,10 @@
         {
           "name": "Commercial Service Queries",
           "subCategories": ["Renewals","Queries","Underwriting"]
+        },
+        {
+          "name": "Commercial Service Renewals",
+          "subCategories": ["Renewals"]
         }
       ]
     },
@@ -75,8 +79,8 @@
       "type": "Retentions",
       "categories": [
         {
-          "name": "Funeral Retention",
-          "subCategories": ["Funeral Retention"]
+          "name": "Funeral Retentions",
+          "subCategories": ["Funeral Retentions"]
         },
         {
           "name": "Hollar Retention",

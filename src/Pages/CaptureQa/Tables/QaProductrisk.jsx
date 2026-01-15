@@ -18,7 +18,7 @@ const QaProdRisk = () => {
   const dataSource = id ? tableData : data;
 
   // ✅ Using context data instead of local state
-  const { productRiskTableData, setProductRiskTableData,setProductSummary } = useContext(CallLogContext);
+  const { productRiskTableData, setProductRiskTableData,setProductSummary, productSummary } = useContext(CallLogContext);
 
   const [selectedFilters, setSelectedFilters] = useState({ filter: '', subGrouping: '', grouping: "", });
   const [tableError, setTableError] = useState(false);
@@ -49,7 +49,7 @@ const QaProdRisk = () => {
     const mappedData = filteredData.map((item) => ({
       phrase: item["Phrase"],
       category: item["Category"],
-      compliance: '',
+      compliance: 'N/A',
       comment: ''
     }));
 
@@ -57,6 +57,19 @@ const QaProdRisk = () => {
     setProductRiskTableData(id? dataSource : mappedData);
   };
   }, [dataSource, id, productRiskTableData, selectedFilters, setProductRiskTableData]);
+  
+  useEffect(()=>{
+    
+    // ✅ Count compliant values
+    const summary = {Yes: 0, No: 0 , 'N/A': 0};
+    productRiskTableData.forEach((row)=>{
+      if (summary[row.compliance] !== undefined)
+      {
+        summary[row.compliance]++;
+      }
+    })
+    setProductSummary(summary);
+  })
 
   // ✅ Update context data directly instead of local state
   const handleChange = (index, field, value) => {
@@ -86,15 +99,6 @@ const QaProdRisk = () => {
     //   return;
     // }
 
-    // ✅ Count compliant values
-    const summary = {Yes: 0, No: 0 , 'N/A': 0};
-    productRiskTableData.forEach((row)=>{
-      if (summary[row.compliance] !== undefined)
-      {
-        summary[row.compliance]++;
-      }
-    })
-    setProductSummary(summary);
     //done counting here
 
     setTableError(false);
@@ -134,6 +138,7 @@ const QaProdRisk = () => {
                   <TableCell sx={{ width: "50%" }}>{row.phrase}</TableCell>
                   <TableCell>{row.category}</TableCell>
                   <TableCell>
+                    {row.compliance===""?row.compliance="N/A":
                     <Select
                       value={row.compliance}
                       onChange={(e) => handleChange(realIndex, 'compliance', e.target.value)}
@@ -143,7 +148,7 @@ const QaProdRisk = () => {
                       <MenuItem value="N/A">N/A</MenuItem>
                       <MenuItem value="Yes">Yes</MenuItem>
                       <MenuItem value="No">No</MenuItem>
-                    </Select>
+                    </Select>}
                   </TableCell>
                   <TableCell>
                     <TextField
@@ -157,6 +162,28 @@ const QaProdRisk = () => {
               );
             })}
           </TableBody>
+          <TableHead sx={{
+            position: "sticky",
+            bottom: 0,
+            backgroundColor: "white", // ensure it doesn’t overlap content
+            zIndex: 2, // keep it above body rows
+          }}
+            >
+            <TableRow>
+              <TableCell>
+                <strong>Total Phrases: {productRiskTableData.length}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total compliant Phrases: {productSummary['Yes']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Non-Compliant: {productSummary['No']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Completed Phrases: {productRiskTableData.length}</strong>
+              </TableCell>
+            </TableRow>
+          </TableHead>
         </Table>
       </TableContainer>
 

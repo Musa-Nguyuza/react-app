@@ -18,7 +18,7 @@ const Marketconduct = () => {
   const dataSource = id ? tableData : data;
 
   // ✅ Using context data instead of local state
-  const { marketConductTableData,setMarketConductTableData,setMarketSummary } = useContext(CallLogContext);
+  const { marketConductTableData,setMarketConductTableData,setMarketSummary, marketSummary } = useContext(CallLogContext);
 
   const [selectedFilters, setSelectedFilters] = useState({ filter: '', grouping: '' });
   const [tableError, setTableError] = useState(false);
@@ -48,7 +48,7 @@ const Marketconduct = () => {
     const mappedData = filteredData.map((item) => ({
       phrase: item["Phrase"],
       category: item["Category Phrase List"],
-      compliance: '',
+      compliance: 'N/A',
       comment: ''
     }));
 
@@ -56,6 +56,17 @@ const Marketconduct = () => {
     setMarketConductTableData(id? dataSource : mappedData);
   }
   }, [dataSource, id, marketConductTableData.length, selectedFilters, setMarketConductTableData]); 
+
+  useEffect(()=>{
+    const summary = {Yes: 0, No: 0 , 'N/A': 0};
+    marketConductTableData.forEach((row)=>{
+      if (summary[row.compliance] !== undefined)
+      {
+        summary[row.compliance]++;
+      }
+    })
+    setMarketSummary(summary);
+  })
 
   // ✅ Update context data directly instead of local state
   const handleChange = (index, field, value) => {
@@ -85,17 +96,6 @@ const Marketconduct = () => {
     //   return;
     // }
 
-    // ✅ Count compliant values
-    const summary = {Yes: 0, No: 0 , 'N/A': 0};
-    marketConductTableData.forEach((row)=>{
-      if (summary[row.compliance] !== undefined)
-      {
-        summary[row.compliance]++;
-      }
-    })
-    setMarketSummary(summary);
-    //done counting here
-
     setTableError(false);
      navigate(id ? `/Qa-Product-risk/${id}`: '/Qa-Product-risk');
 
@@ -115,7 +115,6 @@ const Marketconduct = () => {
           Please ensure all rows have a compliance selection.
         </Typography>
       )}
-      {marketConductTableData.length +" "+ id}
 
       <TableContainer component={Paper} sx={{ maxHeight: 700, mt: 2 }}>
         <Table stickyHeader>
@@ -135,6 +134,7 @@ const Marketconduct = () => {
                   <TableCell sx={{ width: "50%" }}>{row.phrase}</TableCell>
                   <TableCell>{row.category}</TableCell>
                   <TableCell>
+                    {row.compliance===""?row.compliance="N/A":
                     <Select
                       value={row.compliance}
                       onChange={(e) => handleChange(realIndex, 'compliance', e.target.value)}
@@ -144,7 +144,7 @@ const Marketconduct = () => {
                       <MenuItem value="N/A">N/A</MenuItem>
                       <MenuItem value="Yes">Yes</MenuItem>
                       <MenuItem value="No">No</MenuItem>
-                    </Select>
+                    </Select>}
                   </TableCell>
                   <TableCell>
                     <TextField
@@ -158,6 +158,28 @@ const Marketconduct = () => {
               );
             })}
           </TableBody>
+          <TableHead sx={{
+                      position: "sticky",
+                      bottom: 0,
+                      backgroundColor: "white", // ensure it doesn’t overlap content
+                      zIndex: 2, // keep it above body rows
+                    }}
+                      >
+                      <TableRow>
+                        <TableCell>
+                          <strong>Total Phrases: {marketConductTableData.length}</strong>
+                        </TableCell>
+                        <TableCell>
+                          <strong>Total compliant Phrases: {marketSummary['Yes']}</strong>
+                        </TableCell>
+                        <TableCell>
+                          <strong>Total Non-Compliant: {marketSummary['No']}</strong>
+                        </TableCell>
+                        <TableCell>
+                          <strong>Total Completed Phrases: {marketConductTableData.length}</strong>
+                        </TableCell>
+                      </TableRow>
+                    </TableHead>
         </Table>
       </TableContainer>
 

@@ -6,7 +6,8 @@ import {
   TableRow,
   TableCell,
   TableBody,
-  TablePagination, Paper
+  TablePagination, Paper,
+  TableContainer
 } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -20,6 +21,7 @@ const statusColors = {
 
 
 const ViewFindingTable = () => {
+  const [initialData, setInitialData]= useState([])
   const [data, setData] = useState([]);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(25);
@@ -27,9 +29,10 @@ const ViewFindingTable = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://riskapp-backend.onrender.com/api/dispute/data').then(res => {
+    axios.get('http://localhost:3001/api/dispute/data').then(res => {
       const findingsList = res.data;
       const selectedFinding = findingsList.find(f => f.id === parseInt(id));
+      setInitialData(selectedFinding)
 
       if (!selectedFinding) {
         console.error('No finding found with ID:', id);
@@ -59,16 +62,20 @@ const ViewFindingTable = () => {
 
   return (
     <>
-      <Table component={Paper} sx={{ maxHeight: 700, mt: 2 }}>
-        <TableHead stickyHeader>
+      <TableContainer component={Paper} sx={{ maxHeight: 700, mt: 2 }}>
+        <Table stickyHeader>
+          <TableHead>
           <TableRow>
-            <TableCell>Phrase</TableCell>
-            <TableCell>Category</TableCell>
-            <TableCell>Compliance</TableCell>
-            <TableCell>Status</TableCell>
-            <TableCell>Action</TableCell>
+            <TableCell>
+              <strong>Phrase</strong> 
+            </TableCell>
+            <TableCell><strong>Category</strong> </TableCell>
+            <TableCell><strong>Compliance</strong> </TableCell>
+            <TableCell><strong>Status</strong> </TableCell>
+            {/* <TableCell>Action</TableCell> */}
           </TableRow>
-        </TableHead>
+          </TableHead>
+       
         <TableBody>
           {data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((item, i) => (
             <TableRow key={i}>
@@ -76,18 +83,19 @@ const ViewFindingTable = () => {
               <TableCell>{item.category}</TableCell>
               <TableCell>{item.compliance}</TableCell>
               <TableCell sx={{color: 'white', 
-                backgroundColor: statusColors[item.status] || 'white'
-              }}>{item.status}</TableCell>
+                backgroundColor: statusColors[initialData.Status] || 'white'
+              }}>{initialData.Status}</TableCell>
               <TableCell>
-                <Button onClick={() => navigate(`/edit-finding/${id}/${item.type}/${item.index}`)}
+                {/* <Button onClick={() => navigate(`/edit-finding/${id}/${item.type}/${item.index}`)}
                 variant="contained" 
                 color="primary"
-                >View</Button>
+                >View</Button> */}
               </TableCell>
             </TableRow>
           ))}
         </TableBody>
-      </Table>
+         </Table>
+      </TableContainer>
 
       <TablePagination
         component="div"
@@ -96,8 +104,15 @@ const ViewFindingTable = () => {
         onPageChange={handleChangePage}
         rowsPerPage={rowsPerPage}
         onRowsPerPageChange={handleChangeRowsPerPage}
-        rowsPerPageOptions={[5, 10, 25]}
+        rowsPerPageOptions={[10, 25, 50,100]}
       />
+      <Button
+        variant="contained"
+        onClick={() => navigate(`/edit-finding/${id}`)}
+        sx={{ width: "15%", bgcolor: "white", color: "black" }}
+      >
+        Action Required
+      </Button>
     </>
   );
 };

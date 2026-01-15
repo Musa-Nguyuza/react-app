@@ -8,7 +8,7 @@ import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
 
 const buttonData = [
   { label: 'QA RESULTS', icon: <InsertChartOutlinedIcon />, to: "/view-data" },
-  { label: 'FINDINGS', icon: <VisibilityIcon /> , to: "/view-findings" },
+  { label: 'REMEDIAL ACTION', icon: <VisibilityIcon /> , to: "/view-findings" },
 ];
 
 const ViewOptions = () => {

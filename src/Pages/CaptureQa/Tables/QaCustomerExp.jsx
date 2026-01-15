@@ -18,7 +18,7 @@ const QaCustomerExp = () => {
   const dataSource = id ? tableData : data;
 
   // ✅ Using context data instead of local state
-  const { customerExperienceTableData, setCustomerExperienceTableData, setCustomerSummary } = useContext(CallLogContext);
+  const { customerExperienceTableData, setCustomerExperienceTableData, setCustomerSummary,customerSummary } = useContext(CallLogContext);
 
   const [selectedFilters, setSelectedFilters] = useState({ filter: '', grouping: "", });
   const [tableError, setTableError] = useState(false);
@@ -48,7 +48,7 @@ const QaCustomerExp = () => {
     const mappedData = filteredData.map((item) => ({
       phrase: item["Phrase"],
       category: item["Category"],
-      compliance: '',
+      compliance: 'N/A',
       comment: ''
     }));
 
@@ -56,6 +56,20 @@ const QaCustomerExp = () => {
     setCustomerExperienceTableData(id? dataSource : mappedData);
   };
   }, [customerExperienceTableData, dataSource, id, selectedFilters, setCustomerExperienceTableData]);
+
+  useEffect(()=>{
+    
+    // ✅ Count compliant values
+    const summary = {Yes: 0, No: 0 , 'N/A': 0};
+    customerExperienceTableData.forEach((row)=>{
+      if (summary[row.compliance] !== undefined)
+      {
+        summary[row.compliance]++;
+      }
+    })
+    setCustomerSummary(summary);
+    //done counting here
+  })
 
   // ✅ Update context data directly instead of local state
   const handleChange = (index, field, value) => {
@@ -85,16 +99,6 @@ const QaCustomerExp = () => {
     //   return;
     // }
 
-    // ✅ Count compliant values
-    const summary = {Yes: 0, No: 0 , 'N/A': 0};
-    customerExperienceTableData.forEach((row)=>{
-      if (summary[row.compliance] !== undefined)
-      {
-        summary[row.compliance]++;
-      }
-    })
-    setCustomerSummary(summary);
-    //done counting here
 
     setTableError(false);
     navigate(id? `/Remediation/${id}` :'/Remediation');
@@ -133,6 +137,7 @@ const QaCustomerExp = () => {
                   <TableCell sx={{ width: "50%" }}>{row.phrase}</TableCell>
                   <TableCell>{row.category}</TableCell>
                   <TableCell>
+                    {row.compliance===""?row.compliance="N/A":
                     <Select
                       value={row.compliance}
                       onChange={(e) => handleChange(realIndex, 'compliance', e.target.value)}
@@ -142,7 +147,7 @@ const QaCustomerExp = () => {
                       <MenuItem value="N/A">N/A</MenuItem>
                       <MenuItem value="Yes">Yes</MenuItem>
                       <MenuItem value="No">No</MenuItem>
-                    </Select>
+                    </Select>}
                   </TableCell>
                   <TableCell>
                     <TextField
@@ -156,6 +161,28 @@ const QaCustomerExp = () => {
               );
             })}
           </TableBody>
+          <TableHead sx={{
+            position: "sticky",
+            bottom: 0,
+            backgroundColor: "white", // ensure it doesn’t overlap content
+            zIndex: 2, // keep it above body rows
+          }}
+            >
+            <TableRow>
+              <TableCell>
+                <strong>Total Phrases: {customerExperienceTableData.length}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total compliant Phrases: {customerSummary['Yes']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Non-Compliant: {customerSummary['No']}</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Total Completed Phrases: {customerExperienceTableData.length}</strong>
+              </TableCell>
+            </TableRow>
+          </TableHead>
         </Table>
       </TableContainer>
 

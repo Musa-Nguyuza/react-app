@@ -1,10 +1,10 @@
 import React, { createContext, useState } from 'react';
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const CallLogContext = createContext();
 
 export const CallLogProvider = ({ children }) => {
-  const [formData, setFormData] = useState({
+  const initialData ={
     callSystem: "",
     dateTime: null,
     dateTimeEnd: null,
@@ -19,7 +19,12 @@ export const CallLogProvider = ({ children }) => {
     teamLeader: null,
     callDuration: '',
     contactID: null,
-  });
+    actionItem: '',
+    dateAndTimeOfRemediation : null,
+    dateAndTimeOfDueDate: null,
+  };
+
+  const [formData, setFormData] = useState(initialData)
 
   const [formErrors, setFormErrors] = useState({
     callSystem: false,
@@ -55,9 +60,13 @@ const [customerExperienceTableData, setCustomerExperienceTableData] = useState([
 const [customerSummary, setCustomerSummary] = useState({Yes:0, No:0,'N/A':0});
 
 const [remediationTableData, setRemediationRiskTableData] = useState([]);
-const [remediationSummary, setRemediationSummary] = useState({Yes:0, No:0,'N/A':0});
+const [remediationSummary, setRemediationSummary] = useState({Yes:0, No:0});
 
 const [holdFilter, setHoldFilter] = useState('');
+const handleReset = () =>
+{
+  setFormData(initialData);
+}
 
 
   return (
@@ -76,7 +85,8 @@ const [holdFilter, setHoldFilter] = useState('');
         processSummary, setProcessSummary,
         customerSummary, setCustomerSummary,
         remediationSummary, setRemediationSummary,
-        holdFilter, setHoldFilter
+        holdFilter, setHoldFilter,
+        handleReset
 
  }}>
       {children}

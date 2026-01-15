@@ -47,11 +47,16 @@ const Adherence = () =>
     const handleSubmitAll = async () => {
         try {
             // ✅ Filter findings where compliance is "No"
-            const FindingRegulatory = regulatoryTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
-            const FindingMarket = marketConductTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
-            const FindingProduct = productRiskTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
-            const FindingProcess = processTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
-            const FindingCustomer = customerExperienceTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
+            const FindingRegulatory = regulatoryTableData.filter(row => row.compliance === "No");
+            const FindingMarket = marketConductTableData.filter(row => row.compliance === "No");
+            const FindingProduct = productRiskTableData.filter(row => row.compliance === "No");
+            const FindingProcess = processTableData.filter(row => row.compliance === "No");
+            const FindingCustomer = customerExperienceTableData.filter(row => row.compliance === "No");
+            // const FindingRegulatory = regulatoryTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
+            // const FindingMarket = marketConductTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
+            // const FindingProduct = productRiskTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
+            // const FindingProcess = processTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
+            // const FindingCustomer = customerExperienceTableData.filter(row => row.compliance === "No").map(row => ({...row,status: "Not Started", Assigned:formData.AgentName}));
 
             // ✅ Construct full context data for /submit-form
             const formSubmissionData = {
@@ -76,12 +81,18 @@ const Adherence = () =>
             selectedSubCategory: formData.selectedSubCategory,
             dateTime :dayjs( formData.dateTime).format('YYYY/MM/DD, HH:mm:ss'),
             dateTimeEnd:dayjs( formData.dateTimeEnd).format('YYYY/MM/DD, HH:mm:ss'),
-            secondCall: formData.secondCall,
+            secondCall: formData.secondCall?.value,
             additionalCall: formData.additionalCall,
             AgentName: formData.AgentName,
             riskOfficer: formData.riskOfficer,
             teamLeader: formData.teamLeader,
             callDuration: formData.callDuration,
+            Status: "Not Started",
+            Assigned:formData.AgentName,
+            actionItem: formData.actionItem,
+            dateAndTimeOfRemediation: formData.dateAndTimeOfRemediation,
+            dateAndTimeOfDueDate: dayjs( formData.dateAndTimeOfDueDate).format('YYYY/MM/DD, HH:mm:ss'),
+
 
 
             FindingRegulatory,
@@ -92,14 +103,26 @@ const Adherence = () =>
             };
 
             // ✅ Submit to /submit-form
-            const formResponse = await axios.post('https://riskapp-backend.onrender.com/submit-form', formSubmissionData);
+            //const formResponse = await axios.post('https://riskapp-backend.onrender.com/submit-form', formSubmissionData);
+            const formResponse = await axios.post('http://localhost:3001/submit-form', formSubmissionData);
             console.log('✅ Form submission successful:', formResponse.data);
 
-            // ✅ Submit to /api/dispute
-            const disputeResponse = await axios.post('https://riskapp-backend.onrender.com/api/dispute', disputeData);
+            if(FindingRegulatory.length != 0 ||
+            FindingMarket.length != 0 ||
+            FindingProduct.length != 0 ||
+            FindingProcess.length != 0 ||
+            FindingCustomer.length != 0 )
+            {
+                            // ✅ Submit to /api/dispute
+            const disputeResponse = await axios.post('http://localhost:3001/api/dispute', disputeData);
             console.log('✅ Dispute submission successful:', disputeResponse.data);
 
-            alert('✅ Both submissions were successful!');
+            alert('✅submission is successful!');
+            }else
+            {
+                alert('❌submission is successful!');
+            }
+
             // navigate('/Qa-Product-risk'); // Optional navigation
         } catch (error) {
             console.error('❌ Submission failed:', error.response?.data || error.message);
@@ -202,12 +225,12 @@ const Adherence = () =>
                         </Box>
                     </Grid>
 
-                    <Grid item mt={{sm:2,md:2,xl:0}} size={{md:12, lg:12,xl:6}} sx={{textWrap:'nowrap'}}>
+                    <Grid item mt={{xs:2,sm:2,md:2,xl:0}} size={{md:12, lg:12,xl:6}} sx={{textWrap:'nowrap'}}>
                         <Box mb={2}>
                         <Typography sx={{...styleLables, mr:6}}><strong>Operational Risk</strong></Typography>
-                        <TextField value={customerSummary['Yes'] + processSummary['Yes'] + productSummary['Yes']|| 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
-                        <TextField value={customerSummary['No'] + processSummary['No'] + productSummary['No']|| 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
-                        <TextField value={customerSummary['N/A'] + processSummary['N/A'] + productSummary['N/A']|| 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
+                        <TextField value={ processSummary['Yes'] + productSummary['Yes']|| 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
+                        <TextField value={processSummary['No'] + productSummary['No']|| 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
+                        <TextField value={ processSummary['N/A'] + productSummary['N/A']|| 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
                         <Typography sx={{...styleLables, mr:2}}><strong>Error Rate</strong></Typography>
                         <TextField label='N/A' value={(customerSummary['No'] + processSummary['No'] + productSummary['No'])+ "%"|| 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
                         </Box>
@@ -233,7 +256,7 @@ const Adherence = () =>
                         <TextField value={customerSummary['No']  || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={customerSummary['N/A'] || 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
                         <Typography sx={{...styleLables, mr:2}}><strong>Error Rate</strong></Typography>
-                        <TextField label='N/A' value={customerSummary['No'] + "%"  || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
+                        {/* <TextField label='N/A' value={customerSummary['No'] + "%"  || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/> */}
                         </Box>
                         {/* <Box >
                         <Typography sx={{display:'inline', position:'relative', top:'15px', mr:10}}><strong>Remediation</strong></Typography>

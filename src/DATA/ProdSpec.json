@@ -1,106 +1,106 @@
 [
   {
     "Phrase": "You are covered for…",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Product Risk"
   },
   {
     "Phrase": "Let me check if your policy is still active",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Product Risk"
   },
   {
     "Phrase": "And your additional benefits are…",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Product Risk"
   },
   {
     "Phrase": "Are you the beneficiary on this policy? Let me check the system to confirm",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Product Risk"
   },
   {
     "Phrase": "Please provide/confirm your ID number?",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Authentication",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "What is your contact number?",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Authentication",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Do you have an email address",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Authentication",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "What is your risk and postal address?",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Authentication",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "To claim please send us the following documents",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Certified Copy ID for deceased and beneficiary",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Certified death certificate",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "BI1663 (notice of death) all 3 pages",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Burial order ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
@@ -2905,10 +2905,10 @@
   },
   {
     "Phrase": "Proof of account if you are banking with another bank",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
@@ -2929,226 +2929,226 @@
   },
   {
     "Phrase": "You need to complete a claim form/forms which you can get from the branch or I can email it to you",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Additional documents (police report/gestation letter)",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Please send all documents to FuneralClaimsDocuments@standardbank.co.za/ CreditLifeClaims.SBIB@standardbank.co.za",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Our turn-around time for this claim is 48 hours/ 30 to 31 working days/30 to 90 working days",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Feedback will be provided by the assessor once your claim is registered",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Let me check if your claim is registered",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Let me confirm if all documents were received",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Your claim is registered and the assessor is currently working on it",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Feedback will be provided once claim is finalized",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Your claim was finalized by the assessor, currently waiting for payment/paid/rejected",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Claims Process ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Holding/dead air procedure not followed ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Holding/dead air procedure",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Listens attentively ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Listens attentively ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Readily available ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Readily available ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Utilizing customer name appropriately ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Ownership ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Ownership ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Offer further assistance / Extra mile ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Responds appropriately",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Responds appropriately",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Basic telephone etiquette ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "RTS/PCS",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "RTS/PCS",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Standard Closure ",
-    "Product Type": "Funeral/Credit Life Claims CC",
+    "Product Type": "Funeral/Credit Life ClaimsCC",
     "Category": "Standard Closure ",
     "Call Type": "Claims",
-    "Product Sub Cat Type": "Funeral/Credit Life Claims CC",
+    "Product Sub Cat Type": "Funeral/Credit Life ClaimsCC",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "We understand that sometimes there will be no money to pay your insurance premium. SBIB will not cancel your policy if you skip some premiums. Please note that your cover amount will reduce proportionately as you skip more premiums but will also increase again the more you pay. Your policy will only lapse if you have skipped 6 consecutive premiums. Full details can be found in your policy documents.",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Cover Extender/Non consequence to payment ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Product Risk"
   },
   {
     "Phrase": "Mr/s_____________ to ensure that I am speaking to the right person and to protect the security of your information. Please provide/confirm your ID number? ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "What is your contact number?",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Please confirm or add emails address ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Title, Initials, Surname, Names",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Marital status",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Gender",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Date of birth ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3160,18 +3160,18 @@
   },
   {
     "Phrase": "Country of Nationality",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Country of Birth",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3186,10 +3186,10 @@
   },
   {
     "Phrase": "Country of Residency",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3204,18 +3204,18 @@
   },
   {
     "Phrase": "Country of Citizenship",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Unemployed",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3230,34 +3230,34 @@
   },
   {
     "Phrase": "Occupation information",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Fraud consent",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Document Type ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Country of issue ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3269,26 +3269,26 @@
   },
   {
     "Phrase": "Adhering to laid down business process & rules as per product specifications: 1 . Third party policies are limited to a maximum of five (5) policies debited from the premium payer’s transactional account (all accounts). Confirm with the customer how many 3rd party policies they have taken out in the past? If equal to 5 policies. Inform the customer that they have reached the allowed maximum.  Consultant initiated third- party policies to the customer?",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "2.Beneficiary must be over 18 yrs. nominated a minor (Consultant continued to capture)",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "3. Processed debit date from inception 3-5 working day",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3300,18 +3300,18 @@
   },
   {
     "Phrase": "4. Insuring a dependent who does not qualify as per policy terms and conditions (i.e. adding a grandchild as biological child, friend, divorced couple/without probing relationship further etc.) not limited  ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
     "Phrase": "Was system error escalated to IT and incident number provided",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -3323,10 +3323,10 @@
   },
   {
     "Phrase": "Give reason why client will be placed on hold. Apologise for delays or hold period ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Holding/dead air procedure",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -3338,10 +3338,10 @@
   },
   {
     "Phrase": "Actively paying attention to the customer throughout the call and comprehending what the customer is saying",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Listens attentively ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -3353,42 +3353,42 @@
   },
   {
     "Phrase": "Always be available at all time to speak to client (Inbound or Outbound) ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Readily available ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Ensure you utilize the customer’s name minimum 3 times in a call (beginning of the call, middle and when you close the call)",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Accountability, resolution etc. Do as promised to the client (e'g Call back client as promised)",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Ownership ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Appropriately used empathy for the customer’s situation and acknowledged the customers high's and lows",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Empathy ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Ask client if they can be further assisted before putting the phone down. ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -3400,34 +3400,34 @@
   },
   {
     "Phrase": "Do not be rude to client or get irritated ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Responds appropriately",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "POSITIONING OF THE SURVEY TO CUSTOMERS“Thank you for your call we would really appreciate a few minutes of your time to complete a quick survey. There are only 3 questions on the survey regarding your experience on this call.” May I proceed to transfer you to the survey?",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "RTS/PCS",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Display high professional standard of conduct (Eating, chewing, speaking over the customer) Speak clearly, use simple words and phrases, don’t use overly complex vocabulary. Avoid slang and Insurance jargon. ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Did the consultant end the call appropriately or shared a positive statement. Congratulation on the purchase of your Standard Bank Flexible Life Plan. Please remember to ensure that you have RXXXX in your bank account available for the debit order to be debited on XX/XX. We want to activate your policy as soon as possible for you to start enjoying the benefits of this policy. ",
-    "Product Type": "Funeral Flexible Sales ",
+    "Product Type": "Funeral Flexible Sales",
     "Category": "Standard Closure ",
     "Call Type": "Sales",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -4086,7 +4086,7 @@
   },
   {
     "Phrase": "Mr./s…….You are covered for…",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4094,7 +4094,7 @@
   },
   {
     "Phrase": "Your claim was finalized and sent for authorization for ….(rejection/amount & cover)",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4102,7 +4102,7 @@
   },
   {
     "Phrase": "And your additional benefits are…",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4110,7 +4110,7 @@
   },
   {
     "Phrase": "Your policy lapsed/cancelled on the ….(date)",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4118,7 +4118,7 @@
   },
   {
     "Phrase": "Mr./s as a beneficiary, the benefit amount will be paid in to your bank account.",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4126,7 +4126,7 @@
   },
   {
     "Phrase": "Please provide/confirm your ID number?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4134,7 +4134,7 @@
   },
   {
     "Phrase": "What is your contact number?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4142,7 +4142,7 @@
   },
   {
     "Phrase": "Do you have an email address",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4150,7 +4150,7 @@
   },
   {
     "Phrase": "What is your risk and postal address?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4158,7 +4158,7 @@
   },
   {
     "Phrase": "Thank you for sending us your claim document, may you kindly send us the following outstanding documents",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4166,7 +4166,7 @@
   },
   {
     "Phrase": "Certified Copy ID for deceased",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4174,7 +4174,7 @@
   },
   {
     "Phrase": "Certified Copy ID for beneficiary",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4182,7 +4182,7 @@
   },
   {
     "Phrase": "Certified death certificate",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4190,7 +4190,7 @@
   },
   {
     "Phrase": "BI1663 (notice of death) all 3 pages",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4198,7 +4198,7 @@
   },
   {
     "Phrase": "Confirmation of banking details if you are banking with another bank ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4206,7 +4206,7 @@
   },
   {
     "Phrase": "You need to complete a claim form/forms which I can email to you",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4214,7 +4214,7 @@
   },
   {
     "Phrase": "Additional documents (police report, gestation letter, letter of authority, Death Report from the Traditional Leader)",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4222,7 +4222,7 @@
   },
   {
     "Phrase": "Did the consultant check and paste VOPD report on the system?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "VOPD report",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4230,7 +4230,7 @@
   },
   {
     "Phrase": "Did the consultant check and paste XDS report on the system?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "XDS report",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4248,7 +4248,7 @@
   },
   {
     "Phrase": "Did the consultant confirm death telephonically?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Telephonic confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4306,7 +4306,7 @@
   },
   {
     "Phrase": "Did the consultant confirm relationship telephonically?",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Telephonic confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4364,7 +4364,7 @@
   },
   {
     "Phrase": "Holding/dead air procedure not followed ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Holding/dead air procedure",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4400,7 +4400,7 @@
   },
   {
     "Phrase": "Listens attentively ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Listens attentively ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4454,7 +4454,7 @@
   },
   {
     "Phrase": "Readily available ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Readily available ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4490,7 +4490,7 @@
   },
   {
     "Phrase": "Utilizing customer name appropriately ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4518,7 +4518,7 @@
   },
   {
     "Phrase": "Ownership ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Ownership ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4570,7 +4570,7 @@
   },
   {
     "Phrase": "Offer further assistance / Extra mile ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4596,7 +4596,7 @@
   },
   {
     "Phrase": "Responds appropriately",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Responds appropriately",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4620,7 +4620,7 @@
   },
   {
     "Phrase": "Basic telephone etiquette ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4638,7 +4638,7 @@
   },
   {
     "Phrase": "RTS/PCS",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "RTS/PCS",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -4728,7 +4728,7 @@
   },
   {
     "Phrase": "Standard Closure ",
-    "Product Type": "Funeral Claims ",
+    "Product Type": "Funeral Claims",
     "Category": "Standard Closure ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Funeral Claims",
@@ -6755,7 +6755,7 @@
   },
   {
     "Phrase": "Mr./s…….You are covered for…",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6763,7 +6763,7 @@
   },
   {
     "Phrase": "Your claim was finalized and sent for authorization for ….(rejection/amount & cover)",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6771,7 +6771,7 @@
   },
   {
     "Phrase": "And your additional benefits are…",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6779,7 +6779,7 @@
   },
   {
     "Phrase": "Your policy lapsed/cancelled on the ….(date)",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Cover Amount/Confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6787,7 +6787,7 @@
   },
   {
     "Phrase": "Please provide/confirm your ID number?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6795,7 +6795,7 @@
   },
   {
     "Phrase": "What is your contact number?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6803,7 +6803,7 @@
   },
   {
     "Phrase": "Do you have an email address",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6811,7 +6811,7 @@
   },
   {
     "Phrase": "What is your risk and postal address?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Authentication",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6819,7 +6819,7 @@
   },
   {
     "Phrase": "Thank you for sending us your claim document, may you kindly send us the following outstanding documents",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6827,7 +6827,7 @@
   },
   {
     "Phrase": "Certified Copy ID for deceased and beneficiary",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6835,7 +6835,7 @@
   },
   {
     "Phrase": "Certified death certificate",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6843,7 +6843,7 @@
   },
   {
     "Phrase": "BI1663 (notice of death) all 3 pages",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6851,7 +6851,7 @@
   },
   {
     "Phrase": "Proof of account if you are banking with another bank (for double cover)",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6859,7 +6859,7 @@
   },
   {
     "Phrase": "You need to complete a claim form/forms which I can email to you",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6867,7 +6867,7 @@
   },
   {
     "Phrase": "Additional documents (police report, letter of authority)",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Documents confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6875,7 +6875,7 @@
   },
   {
     "Phrase": "Did the consultant check and paste VOPD report on the system?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "VOPD report",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6883,7 +6883,7 @@
   },
   {
     "Phrase": "Did the consultant check and paste XDS report on the system?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "XDS report",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6891,7 +6891,7 @@
   },
   {
     "Phrase": "Did the consultant confirm the incident telephonically?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Telephonic confirmation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6899,7 +6899,7 @@
   },
   {
     "Phrase": "Did the consultant prepare the applicable statement and uploaded it on the shared point?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Payment preparation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6907,7 +6907,7 @@
   },
   {
     "Phrase": "Were calculations done accurately on the system?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Payment preparation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6915,7 +6915,7 @@
   },
   {
     "Phrase": "First payment authorization",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "First authorisation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6923,7 +6923,7 @@
   },
   {
     "Phrase": "Second payment authorization",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Second authorisation",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6931,7 +6931,7 @@
   },
   {
     "Phrase": "Did the consultant verify all payment details on the system?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Verifies the authorization status",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6939,7 +6939,7 @@
   },
   {
     "Phrase": "Was the repudiation letter prepared and updated accurately?",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Repudiation letter ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6947,7 +6947,7 @@
   },
   {
     "Phrase": "Holding/dead air procedure not followed ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Holding/dead air procedure",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6955,7 +6955,7 @@
   },
   {
     "Phrase": "Listens attentively ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Listens attentively ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6963,7 +6963,7 @@
   },
   {
     "Phrase": "Readily available ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Readily available ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6971,7 +6971,7 @@
   },
   {
     "Phrase": "Utilizing customer name appropriately ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6979,7 +6979,7 @@
   },
   {
     "Phrase": "Ownership ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Ownership ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6987,7 +6987,7 @@
   },
   {
     "Phrase": "Offer further assistance / Extra mile ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -6995,7 +6995,7 @@
   },
   {
     "Phrase": "Responds appropriately",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Responds appropriately",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -7003,7 +7003,7 @@
   },
   {
     "Phrase": "Basic telephone etiquette ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -7011,7 +7011,7 @@
   },
   {
     "Phrase": "RTS/PCS",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "RTS/PCS",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -7019,7 +7019,7 @@
   },
   {
     "Phrase": "Standard Closure ",
-    "Product Type": "Credit Life Claims ",
+    "Product Type": "Credit Life Claims",
     "Category": "Standard Closure ",
     "Call Type": "Claims",
     "Product Sub Cat Type": "Credit Life Claims",
@@ -9270,7 +9270,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9278,7 +9278,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9286,7 +9286,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9294,7 +9294,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9302,7 +9302,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9310,7 +9310,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9318,7 +9318,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9326,7 +9326,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Authentication",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9334,7 +9334,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Business Process and work instructions",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9342,7 +9342,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "First call resolution",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9350,7 +9350,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Prefered method of communication ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9358,7 +9358,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Skipped Premium",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9366,7 +9366,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Skipped Premium",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9374,7 +9374,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Skipped Premium",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9382,7 +9382,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Skipped Premium",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9390,7 +9390,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Skipped Premium",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9398,7 +9398,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "IT escalation",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9406,7 +9406,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Objection Handling",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9414,7 +9414,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Objection Handling",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9422,7 +9422,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Objection Handling",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Process"
   },
   {
@@ -9430,7 +9430,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Holding/dead air procedure",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9438,7 +9438,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Listens attentively ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9446,7 +9446,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Readily available ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9454,7 +9454,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9462,7 +9462,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Ownership ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9470,7 +9470,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Empathy ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9478,7 +9478,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9486,7 +9486,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Responds appropriately",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9494,7 +9494,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "RTS/PCS",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9502,7 +9502,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -9510,7 +9510,7 @@
     "Product Type": "Funeral Retentions",
     "Category": "Standard Closure ",
     "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Flexible Sales ",
+    "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Customer Experience"
   },
   {
@@ -13930,6 +13930,10 @@
   },
   {
     "Phrase": "Auto Zero",
+    "Operational Risk": "Outcome Admin"
+  },
+  {
+    "Phrase": "Upskilling?",
     "Operational Risk": "Outcome Admin"
   },
   {
