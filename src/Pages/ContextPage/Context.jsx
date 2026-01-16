@@ -62,7 +62,7 @@ const [customerSummary, setCustomerSummary] = useState({Yes:0, No:0,'N/A':0});
 const [remediationTableData, setRemediationRiskTableData] = useState([]);
 const [remediationSummary, setRemediationSummary] = useState({Yes:0, No:0});
 
-const [holdFilter, setHoldFilter] = useState('');
+const [holdFilter, setHoldFilter] = useState({ filter: '', subGrouping: '' });
 const handleReset = () =>
 {
   setFormData(initialData);

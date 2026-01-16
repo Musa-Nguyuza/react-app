@@ -49,6 +49,7 @@ const Regulatory = () => {
 
   const [selectedFilters, setSelectedFilters] = useState({
     filter: "",
+    subGrouping: '',
     grouping: "",
   });
   const [tableError, setTableError] = useState(false);
@@ -64,20 +65,24 @@ const Regulatory = () => {
       const parsed = JSON.parse(stored);
       setSelectedFilters({ ...parsed, grouping: "Regulatory" });
     } else {
-      setSelectedFilters({ filter: "", grouping: "Regulatory" });
+      setSelectedFilters({ filter: "", subGrouping: '', grouping: "Regulatory" });
     }
   }, []);
 
   useEffect(() => {
     if (!selectedFilters.grouping || dataSource.length === 0) return;
-    if (holdFilter !== selectedFilters.filter) {
+    if (holdFilter.filter !== selectedFilters.filter || holdFilter.subGrouping !== selectedFilters.subGrouping) {
       setRegulatoryTableData([]);
       setMarketConductTableData([]),
         setProductRiskTableData([]),
         setProcessTableData([]),
         setCustomerExperienceTableData([]),
         setRemediationRiskTableData([]);
-      setHoldFilter(selectedFilters.filter);
+      //setHoldFilter(selectedFilters.filter,selectedFilters.subGrouping);
+      setHoldFilter(prev => ({...prev,
+     filter: selectedFilters.filter,
+     subGrouping: selectedFilters.subGrouping
+    }));
       return;
     }
 
@@ -173,7 +178,7 @@ const Regulatory = () => {
           <TableHead>
             <TableRow>
               <TableCell>
-                <strong>Phrase</strong>
+                <strong>Phrase {holdFilter.subGrouping +" "+ selectedFilters.subGrouping}</strong>
               </TableCell>
               <TableCell>
                 <strong>Category</strong>
