@@ -62,7 +62,7 @@ const ViewPhrase = () => {
   //get the id/tablename and index in dispute.json
 const handleViewFinding = async (phrase, policyNumber) => {
   try {
-    const res = await fetch('http://localhost:3001/api/find-phrase', {
+    const res = await fetch('https://riskapp-backend.onrender.com/api/find-phrase', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ phrase, policyNumber })
