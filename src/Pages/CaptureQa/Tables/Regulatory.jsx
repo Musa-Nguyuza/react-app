@@ -178,7 +178,7 @@ const Regulatory = () => {
           <TableHead>
             <TableRow>
               <TableCell>
-                <strong>Phrase {holdFilter.subGrouping +" "+ selectedFilters.subGrouping}</strong>
+                <strong>Phrase</strong>
               </TableCell>
               <TableCell>
                 <strong>Category</strong>
