@@ -16,7 +16,7 @@ const ViewQa = () => {
 
 
 useEffect(() => {
-  fetch('https://riskapp-backend.onrender.com/api/data')
+  fetch('http://localhost:3001/api/data')
     .then((res) => res.json())
     .then((data)=> setData(data))
     .catch((err) => {
@@ -56,7 +56,7 @@ useEffect(() => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           InputLabelProps={{ shrink: true }}
-          sx={{ width: '20%', border: '1px solid black', }}
+          sx={{ minWidth:'210px', width: '20%', border: '1px solid black', }}
           slotProps={{
             input: {
               startAdornment: (

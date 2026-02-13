@@ -388,7 +388,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -396,7 +396,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -404,7 +404,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -412,7 +412,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -420,7 +420,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -428,7 +428,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -436,7 +436,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -444,7 +444,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -452,7 +452,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -460,7 +460,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -468,7 +468,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -476,7 +476,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -484,7 +484,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -492,7 +492,7 @@
     "Product Type": "Commercial Sales",
     "Category": "Risk Classes",
     "Call Type": "Sales",
-    "Product Sub Cat Type": " SBCOM",
+    "Product Sub Cat Type": "SBCOM",
     "Operational Risk": "Product Risk"
   },
   {
@@ -2634,7 +2634,7 @@
   {
     "Phrase": "We understand that sometimes there will be no money to pay your insurance premium. Your policy will not immediately lapse if you are unable to pay a premium. When you miss a premium (for example your debit order came back as unpaid because of insufficient funds) we will notify you of such missed premium and you will have 15 days to pay this premium before we reduce your benefit amount.",
     "Product Type": "Flexi Life Sales",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Flexi Life Sales",
     "Operational Risk": "Product Risk"
@@ -3090,7 +3090,7 @@
   {
     "Phrase": "We understand that sometimes there will be no money to pay your insurance premium. SBIB will not cancel your policy if you skip some premiums. Please note that your cover amount will reduce proportionately as you skip more premiums but will also increase again the more you pay. Your policy will only lapse if you have skipped 6 consecutive premiums. Full details can be found in your policy documents.",
     "Product Type": "Funeral Flexible Sales",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Funeral Flexible Sales",
     "Operational Risk": "Product Risk"
@@ -4392,7 +4392,7 @@
   },
   {
     "Phrase": "There are no medical examinations required for this policy which is underwritten by the Liberty Group Limited.Your protection policy will be in force as soon as your bond is registeredhowever Standard Bank provides you with FREE accidental death cover fromtoday to a maximum of 3 months whilst your bond is being registeredIF JOINT BOND:Please be advised that should you also wish for your wife/husband/partner/co-applicant to be insured, you will receive 40% discount on the premium of whoever is youngerPlease confirm if we may contact them?",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Additional Benefits ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4418,7 +4418,7 @@
   },
   {
     "Phrase": "If you are a U Count Rewards member, you are eligible to get 50 tiering points. More information about this is available on our website or through our U count contact center.",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "U-count",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4436,7 +4436,7 @@
   },
   {
     "Phrase": "Consultant did not follow sales process.",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Business Process and work instructions",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4472,7 +4472,7 @@
   },
   {
     "Phrase": "Title, Initials, Surname, Names",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4526,7 +4526,7 @@
   },
   {
     "Phrase": "Gender",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4544,7 +4544,7 @@
   },
   {
     "Phrase": "Date of birth",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4562,7 +4562,7 @@
   },
   {
     "Phrase": "ID number",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4588,7 +4588,7 @@
   },
   {
     "Phrase": "Marital Status",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4604,7 +4604,7 @@
   },
   {
     "Phrase": "Contact Number",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4612,7 +4612,7 @@
   },
   {
     "Phrase": "Please confirm or add email address ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4666,7 +4666,7 @@
   },
   {
     "Phrase": "Country of Nationality",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4684,7 +4684,7 @@
   },
   {
     "Phrase": "Country of Birth",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4702,7 +4702,7 @@
   },
   {
     "Phrase": "Country of Residency",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4720,7 +4720,7 @@
   },
   {
     "Phrase": "Country of Citizenship",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4746,7 +4746,7 @@
   },
   {
     "Phrase": "Unemployed",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4754,7 +4754,7 @@
   },
   {
     "Phrase": "Occupation information ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4772,7 +4772,7 @@
   },
   {
     "Phrase": "Fraud consent ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4790,7 +4790,7 @@
   },
   {
     "Phrase": "Did the consultant offer co-applicant quote? ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Authentication",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4818,7 +4818,7 @@
   },
   {
     "Phrase": "Display high professional standard of conduct( Eating, chewing, speaking over the customer)Speak clearly, use simple words and phrases, don’t use overly complex vocabulary . Avoid slang",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Basic telephone etiquette/Professionalism",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4856,7 +4856,7 @@
   },
   {
     "Phrase": "Give reason why client will be placed on hold ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Holding/dead air procedure",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4894,7 +4894,7 @@
   },
   {
     "Phrase": "Actively paying attention to the customer throughout the call and comprehending what the customer is saying.",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Listens attentively ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4922,7 +4922,7 @@
   },
   {
     "Phrase": "Always be available at all times to speak to client (Inbound or Outbound) ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Readily available ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4950,7 +4950,7 @@
   },
   {
     "Phrase": "customer name X2 in an average call",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Utilising customer name appropriately ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -4978,7 +4978,7 @@
   },
   {
     "Phrase": "accountability, resolution etc.Do as promised to the client (e'g Call back client as promised)",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Ownership ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5006,7 +5006,7 @@
   },
   {
     "Phrase": "Appropriately used empathy for the customer’s situation and acknowledged the customers high's and lows",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Empathy ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5024,7 +5024,7 @@
   },
   {
     "Phrase": "Ask client if they can be further assisted before putting the phone down. ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Offer further assistance / Extra mile ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5032,7 +5032,7 @@
   },
   {
     "Phrase": "Do not be rude to client or get irritated ",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Responds appropriately",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5060,7 +5060,7 @@
   },
   {
     "Phrase": "POSITIONING OF THE SURVEY TO CUSTOMERS“Thank you for your call we would really appreciate a few minutes of your time to complete a quick survey. There are only 3 questions on the survey regarding your experience on this call.” May I proceed to transfer you to the survey?",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "RTS/PCS",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5068,7 +5068,7 @@
   },
   {
     "Phrase": "Did the consultant end the call appropriately or shared a positive statement",
-    "Product Type": "Credit Life HLP Sales ",
+    "Product Type": "Credit Life HLP Sales",
     "Category": "Standard Closure ",
     "Call Type": "Sales",
     "Product Sub Cat Type": "Credit Life HLP Sales",
@@ -5771,14 +5771,6 @@
     "Operational Risk": "Process"
   },
   {
-    "Phrase": "Marital status ",
-    "Product Type": "HOC Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "HOC Service",
-    "Operational Risk": "Process"
-  },
-  {
     "Phrase": "ID Number",
     "Product Type": "HOC Service",
     "Category": "Authentication",
@@ -5831,14 +5823,6 @@
     "Product Sub Cat Type1": "Caravan"
   },
   {
-    "Phrase": "Country of Birth",
-    "Product Type": "HOC Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "HOC Service",
-    "Operational Risk": "Process"
-  },
-  {
     "Phrase": "What is the Caravan/Trailers registration number?",
     "Product Type": "Hollard Sales",
     "Category": "Caravan/Trailer underwriting",
@@ -5883,6 +5867,14 @@
     "Operational Risk": "Process"
   },
   {
+    "Phrase": "Name Bondholders",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  },
+  {
     "Phrase": "What is the market value of the Caravan/Trailer?",
     "Product Type": "Hollard Sales",
     "Category": "Caravan/Trailer underwriting",
@@ -5911,14 +5903,6 @@
     "Product Sub Cat Type1": "Caravan"
   },
   {
-    "Phrase": "Physical Address",
-    "Product Type": "HOC Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "HOC Service",
-    "Operational Risk": "Process"
-  },
-  {
     "Phrase": "When not in use where is the Caravan/Trailer parked at night?/ Parking method of the Caravan/Trailer?",
     "Product Type": "Hollard Sales",
     "Category": "Caravan/Trailer underwriting",
@@ -5927,14 +5911,6 @@
     "Operational Risk": "Product Risk",
     "Product Type1": "Hollard Sales",
     "Product Sub Cat Type1": "Caravan"
-  },
-  {
-    "Phrase": "Postal Address",
-    "Product Type": "HOC Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "HOC Service",
-    "Operational Risk": "Process"
   },
   {
     "Phrase": "Is the Caravan/Trailer subject to hire purchase agreement?",
@@ -5948,14 +5924,6 @@
   },
   {
     "Phrase": "Risk Address",
-    "Product Type": "HOC Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "HOC Service",
-    "Operational Risk": "Process"
-  },
-  {
-    "Phrase": "Occupation ",
     "Product Type": "HOC Service",
     "Category": "Authentication",
     "Call Type": "Servicing",
@@ -6414,19 +6382,19 @@
     "Operational Risk": "Process"
   },
   {
-    "Phrase": "Display high professional standard of conduct( Eating, chewing, speaking over the customer)Speak clearly, use simple words and phrases, don’t use overly complex vocabulary .Avoid slang ",
-    "Product Type": "Hollard Sales",
-    "Category": "Basic telephone etiquette/Professionalism",
-    "Call Type": "Sales",
-    "Operational Risk": "Customer Experience"
-  },
-  {
-    "Phrase": "Marital status ",
+    "Phrase": "Which bank are we debiting your premium from?",
     "Product Type": "A&H Service",
     "Category": "Authentication",
     "Call Type": "Servicing",
     "Product Sub Cat Type": "A&H Service",
     "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Display high professional standard of conduct( Eating, chewing, speaking over the customer)Speak clearly, use simple words and phrases, don’t use overly complex vocabulary .Avoid slang ",
+    "Product Type": "Hollard Sales",
+    "Category": "Basic telephone etiquette/Professionalism",
+    "Call Type": "Sales",
+    "Operational Risk": "Customer Experience"
   },
   {
     "Phrase": "Actively paying attention to the customer throughout the call and comprehending what the customer is saying",
@@ -6461,14 +6429,6 @@
   },
   {
     "Phrase": "Country of Citizenship",
-    "Product Type": "A&H Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "A&H Service",
-    "Operational Risk": "Process"
-  },
-  {
-    "Phrase": "Country of Birth ",
     "Product Type": "A&H Service",
     "Category": "Authentication",
     "Call Type": "Servicing",
@@ -6523,22 +6483,6 @@
   },
   {
     "Phrase": "Physical address",
-    "Product Type": "A&H Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "A&H Service",
-    "Operational Risk": "Process"
-  },
-  {
-    "Phrase": "Postal address",
-    "Product Type": "A&H Service",
-    "Category": "Authentication",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "A&H Service",
-    "Operational Risk": "Process"
-  },
-  {
-    "Phrase": "Occupation ",
     "Product Type": "A&H Service",
     "Category": "Authentication",
     "Call Type": "Servicing",
@@ -9236,7 +9180,7 @@
   {
     "Phrase": "\"We understand that sometimes there will be no money to pay your insurancepremium.\"",
     "Product Type": "Funeral Retentions",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Retentions",
     "Product Sub Cat Type": "Funeral Retentions",
     "Operational Risk": "Product Risk"
@@ -9244,7 +9188,7 @@
   {
     "Phrase": "\"SBIB will not cancel your policy if you skip some premiums. Please note that yourcover amount will reduce as you skip more premiums but will also increase again themore you pay. \"",
     "Product Type": "Funeral Retentions",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Retentions",
     "Product Sub Cat Type": "Funeral Retentions",
     "Operational Risk": "Product Risk"
@@ -9252,19 +9196,12 @@
   {
     "Phrase": "\"Your policy will only lapse if you have skipped 6 consecutivepremiums. Full details can be found in your policy documents.\"",
     "Product Type": "Funeral Retentions",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Retentions",
     "Product Sub Cat Type": "Funeral Retentions",
     "Operational Risk": "Product Risk"
   },
-  {
-    "Phrase": "The policy or cover will end where no premiums were received for 2 months consecutively.",
-    "Product Type": "Funeral Retentions",
-    "Category": "Cover Extender/Non consequence to payment ",
-    "Call Type": "Retentions",
-    "Product Sub Cat Type": "Funeral Retentions",
-    "Operational Risk": "Product Risk"
-  },
+ 
   {
     "Phrase": "Mr/s_____________ to ensure that I am speaking to the right person and to protect the security of your information.1. Please provide/confirm your ID number? ",
     "Product Type": "Funeral Retentions",
@@ -11059,7 +10996,7 @@
   {
     "Phrase": "\"We understand that sometimes there will be no money to pay your insurancepremium.\"",
     "Product Type": "Funeral Service",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Servicing",
     "Product Sub Cat Type": "Flexi Life Service",
     "Operational Risk": "Product Risk"
@@ -11067,7 +11004,7 @@
   {
     "Phrase": "\"SBIB will not cancel your policy if you skip some premiums. Please note that yourcover amount will reduce as you skip more premiums but will also increase again themore you pay. \"",
     "Product Type": "Funeral Service",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Servicing",
     "Product Sub Cat Type": "Funeral Service",
     "Operational Risk": "Product Risk"
@@ -11075,19 +11012,12 @@
   {
     "Phrase": "\"Your policy will only lapse if you have skipped 6 consecutivepremiums. Full details can be found in your policy documents.\"",
     "Product Type": "Funeral Service",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Servicing",
     "Product Sub Cat Type": "Funeral Service",
     "Operational Risk": "Product Risk"
   },
-  {
-    "Phrase": "The policy or cover will end where no premiums were received for 2 months consecutively.",
-    "Product Type": "Funeral Service",
-    "Category": "Cover Extender/Non consequence to payment ",
-    "Call Type": "Servicing",
-    "Product Sub Cat Type": "Funeral Service",
-    "Operational Risk": "Product Risk"
-  },
+  
   {
     "Phrase": "•\tUp to R5 000 (not required) per claim•\tClaim must be lodged within 30 days of incident",
     "Product Type": "Stansure Service",
@@ -12266,7 +12196,7 @@
   {
     "Phrase": "We understand that sometimes there will be no money to pay your insurance premium. Your policy will not immediately lapse if you are unable to pay a premium. When you miss a premium (for example your debit order came back as unpaid because of insufficient funds) we will notify you of such missed premium and you will have 15 days to pay this premium before we reduce your benefit amount.",
     "Product Type": "Flexi Life Service",
-    "Category": "Cover Extender/Non consequence to payment ",
+    "Category": "Proportionate benefit/ Consequence to non payment",
     "Call Type": "Servicing",
     "Product Sub Cat Type": "Flexi Life Service",
     "Operational Risk": "Product Risk"

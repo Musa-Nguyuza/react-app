@@ -16,7 +16,7 @@ const Adherence = () =>
 {
     const StyleFields = {minWidth:'60px', width:'5%', mr:2
     };
-    const styleLables = {display:'inline', position:'relative', top:'15px',
+    const styleLables = {display:'inline-block', position:'relative', top:'15px',
         fontSize:{
             md:'0.8rem',
             lg:'1rem'
@@ -104,7 +104,7 @@ const Adherence = () =>
 
             // ✅ Submit to /submit-form
             //const formResponse = await axios.post('https://riskapp-backend.onrender.com/submit-form', formSubmissionData);
-            const formResponse = await axios.post('https://riskapp-backend.onrender.com/submit-form', formSubmissionData);
+            const formResponse = await axios.post('http://localhost:3001/submit-form', formSubmissionData);
             console.log('✅ Form submission successful:', formResponse.data);
 
             if(FindingRegulatory.length != 0 ||
@@ -114,13 +114,13 @@ const Adherence = () =>
             FindingCustomer.length != 0 )
             {
                             // ✅ Submit to /api/dispute
-            const disputeResponse = await axios.post('https://riskapp-backend.onrender.com/api/dispute', disputeData);
+            const disputeResponse = await axios.post('http://localhost:3001/api/dispute', disputeData);
             console.log('✅ Dispute submission successful:', disputeResponse.data);
 
             alert('✅submission is successful!');
             }else
             {
-                alert('❌submission is successful!');
+                alert('☑️submission is successful!');
             }
 
             // navigate('/Qa-Product-risk'); // Optional navigation
@@ -200,7 +200,7 @@ const Adherence = () =>
                 <Grid container>
                     <Grid item size={{ xs:12, md:12, lg:6 }} sx={{textWrap:'nowrap'}}>
                         <Box mb={2} >
-                        <Typography sx={{...styleLables, mr:5.5}}><strong>Compliance</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Compliance</strong></Typography>
                         <TextField value={regulatorySummary['Yes'] + marketSummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={regulatorySummary['No'] + marketSummary['No'] || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={ regulatorySummary['N/A'] + marketSummary['N/A'] ||0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
@@ -208,7 +208,7 @@ const Adherence = () =>
                         <TextField label='N/A' value={(regulatorySummary['No'] + marketSummary['No'])+ "%" || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
                         </Box>
                         <Box mb={2}>
-                        <Typography sx={{...styleLables, mr:6.5}}><strong>Regulatory</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Regulatory</strong></Typography>
                         <TextField value={regulatorySummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={regulatorySummary['No'] || 0} InputLabelProps={{shrink:true}}  label="NO"  sx={StyleFields}/>
                         <TextField value={regulatorySummary['N/A'] || 0} InputLabelProps={{shrink:true}}  label='N/A' sx={StyleFields}/>
@@ -216,7 +216,7 @@ const Adherence = () =>
                         <TextField label='N/A' value={regulatorySummary['No']+ "%" || 0} InputLabelProps={{shrink:true}}  sx={StyleFields}/>
                         </Box>
                         <Box>
-                        <Typography  sx={{...styleLables, mr:2}}><strong>Market Conduct</strong></Typography>
+                        <Typography  sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Market Conduct</strong></Typography>
                         <TextField value={marketSummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={marketSummary['No'] || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={marketSummary['N/A'] || 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
@@ -227,7 +227,7 @@ const Adherence = () =>
 
                     <Grid item mt={{xs:2,sm:2,md:2,xl:0}} size={{md:12, lg:12,xl:6}} sx={{textWrap:'nowrap'}}>
                         <Box mb={2}>
-                        <Typography sx={{...styleLables, mr:6}}><strong>Operational Risk</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Operational Risk</strong></Typography>
                         <TextField value={ processSummary['Yes'] + productSummary['Yes']|| 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={processSummary['No'] + productSummary['No']|| 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={ processSummary['N/A'] + productSummary['N/A']|| 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
@@ -235,7 +235,7 @@ const Adherence = () =>
                         <TextField label='N/A' value={(customerSummary['No'] + processSummary['No'] + productSummary['No'])+ "%"|| 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
                         </Box>
                         <Box mb={2}>
-                        <Typography sx={{...styleLables, mr:14}}><strong>Product</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Product</strong></Typography>
                         <TextField value={productSummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={productSummary['No']  || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={productSummary['N/A'] || 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
@@ -243,7 +243,7 @@ const Adherence = () =>
                         <TextField label='N/A' value={productSummary['No'] + "%" || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
                         </Box>
                         <Box mb={2}>
-                        <Typography sx={{...styleLables, mr:14}}><strong>Process</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Process</strong></Typography>
                         <TextField value={processSummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={processSummary['No']  || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={processSummary['N/A'] || 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
@@ -251,11 +251,11 @@ const Adherence = () =>
                         <TextField label='N/A' value={processSummary['No']+"%"  || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/>
                         </Box>
                         <Box mb={2}>
-                        <Typography sx={{...styleLables, mr:2}}><strong>Customer Experience</strong></Typography>
+                        <Typography sx={{...styleLables, mr:2,width:{sm:'120px',md:'145px',xg:'0%'}}}><strong>Customer Experience</strong></Typography>
                         <TextField value={customerSummary['Yes'] || 0} InputLabelProps={{shrink:true}} label="YES" sx={StyleFields}/>
                         <TextField value={customerSummary['No']  || 0} InputLabelProps={{shrink:true}} label="NO"  sx={StyleFields}/>
                         <TextField value={customerSummary['N/A'] || 0} InputLabelProps={{shrink:true}} label='N/A' sx={StyleFields}/>
-                        <Typography sx={{...styleLables, mr:2}}><strong>Error Rate</strong></Typography>
+                        {/* <Typography sx={{...styleLables, mr:2}}><strong>Error Rate</strong></Typography> */}
                         {/* <TextField label='N/A' value={customerSummary['No'] + "%"  || 0} InputLabelProps={{shrink:true}} sx={StyleFields}/> */}
                         </Box>
                         {/* <Box >

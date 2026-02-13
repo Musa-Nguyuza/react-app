@@ -1,0 +1,89 @@
+[{
+    "Phrase": "The policy or cover will end where no premiums were received for 2 months consecutively.",
+    "Product Type": "Funeral Service",
+    "Category": "Cover Extender/Non consequence to payment ",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "Funeral Service",
+    "Operational Risk": "Product Risk"
+},
+ {
+    "Phrase": "The policy or cover will end where no premiums were received for 2 months consecutively.",
+    "Product Type": "Funeral Retentions",
+    "Category": "Proportionate benefit/ Consequence to non payment",
+    "Call Type": "Retentions",
+    "Product Sub Cat Type": "Funeral Retentions",
+    "Operational Risk": "Product Risk"
+  },
+   {
+    "Phrase": "Country of Birth ",
+    "Product Type": "A&H Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "A&H Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Marital status ",
+    "Product Type": "A&H Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "A&H Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Postal address",
+    "Product Type": "A&H Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "A&H Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Occupation ",
+    "Product Type": "A&H Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "A&H Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Country of Birth",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Marital status ",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Occupation ",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Postal Address",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  },
+  {
+    "Phrase": "Physical Address",
+    "Product Type": "HOC Service",
+    "Category": "Authentication",
+    "Call Type": "Servicing",
+    "Product Sub Cat Type": "HOC Service",
+    "Operational Risk": "Process"
+  }
+]

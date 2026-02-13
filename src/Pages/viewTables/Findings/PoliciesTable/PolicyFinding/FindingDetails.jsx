@@ -24,7 +24,7 @@ const FindingDetails = () =>
 
 
   useEffect(() => {
-    axios.get('https://riskapp-backend.onrender.com/api/dispute/data').then(res => {
+    axios.get('http://localhost:3001/api/dispute/data').then(res => {
       const findingsList = res.data;
       const selectedFinding = findingsList.find(f => f.id === parseInt(id));
 

@@ -39,6 +39,7 @@ const ViewOptions = () => {
                 fontSize: '1.1rem',
                 borderRadius: 2,
                 backgroundColor:"white",
+                textWrap:'nowrap',
                 color:"black",
                 boxShadow: '0 4px 10px rgba(25, 118, 210, 0.3)',
                 transition: 'all 0.3s ease',

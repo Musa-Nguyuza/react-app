@@ -90,7 +90,7 @@ export default function SidebarLayout({ children, captureHeading }) {
         {/* <Box sx={{position:'absolute', right:'10px', mt:3, color:'white', bgcolor:'white', p:2, borderRadius:'50%'}}>
           <X onClick={toggleDrawer(false)} className='cursor-pointer text-blue-600'/>
         </Box> */}
-        <Box sx={{bgcolor:'white', height:'100vh', width:240}}> 
+        <Box sx={{bgcolor:'white',minHeight:'500px', height:'100vh', width:240, border:'1px solid red', position:'relative'}}> 
           <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', py: 2, height: '100px' }}>
 
             <Box component="img" src={Logo} alt="Logo" sx={{ width: 200, height: 50 }} />
@@ -135,7 +135,7 @@ export default function SidebarLayout({ children, captureHeading }) {
                 </Button>
               </Grid>
 
-              <Grid item size={12} sx={{ mt: 70 }}>
+              {/* <Grid item size={12} sx={{ mt: 70 }}>
                 <Button onClick={handleLogout} variant='oulined' sx={{
                   color: 'black',
                   bgcolor: 'whitesmoke',
@@ -146,12 +146,26 @@ export default function SidebarLayout({ children, captureHeading }) {
                 }} fullWidth replace>
                   <LogoutOutlinedIcon sx={{ position: "absolute", left: "25%" }} /> Logout
                 </Button>
-              </Grid>
+              </Grid> */}
 
             </Grid>
-
+                 
           </Box>
-
+                
+                <Button onClick={handleLogout} variant='oulined' sx={{
+                  color: 'black',
+                  bgcolor: 'whitesmoke',
+                  position:'absolute',
+                  bottom:'10px',
+                  width:'90%',
+                  left:'5%',
+                  '&:hover': {
+                    bgcolor: 'rgba(196, 196, 196, 0.47)',
+                    color: 'rgba(0, 0, 0, 0.42)'
+                  }
+                }}  replace>
+                  <LogoutOutlinedIcon sx={{ position: "absolute", left: "25%" }} /> Logout
+                </Button>
         </Box>
       </Drawer> }
 
@@ -167,18 +181,19 @@ export default function SidebarLayout({ children, captureHeading }) {
             width: checkSize ? drawerWidth : "0vw",
             flexShrink: 0,
             [`& .MuiDrawer-paper`]: {
+              minHeight:'100px',
               width: drawerWidth, height: checkSize ? "100vh" : "97px"
               , boxSizing: 'border-box'
             },
           }}
         >
-          <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', py: 2, height: '100px' }}>
+          <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', py: 2, height: '120px' }}>
 
             <Box component="img" src={Logo} alt="Logo" sx={{ width: 200, height: 50 }} />
 
           </Toolbar>
 
-          <Divider />
+          {/* <Divider /> */}
 
           {/* dide bar content */}
 
@@ -216,7 +231,7 @@ export default function SidebarLayout({ children, captureHeading }) {
                 </Button>
               </Grid>
 
-              <Grid item size={{ md: 12 }} sx={{ mt: 70, mb: 2 }}>
+              {/* <Grid item size={{ md: 12 }} sx={{ mt: 70, mb: 2 }}>
                 <Button onClick={handleLogout} variant='oulined' sx={{
                   color: 'black',
                   bgcolor: 'whitesmoke',
@@ -227,12 +242,24 @@ export default function SidebarLayout({ children, captureHeading }) {
                 }} fullWidth replace>
                   <LogoutOutlinedIcon sx={{ position: "absolute", left: "25%" }} /> Logout
                 </Button>
-              </Grid>
+              </Grid> */}
 
             </Grid>
 
           </Box>
-
+                <Button onClick={handleLogout} variant='oulined' sx={{
+                  color: 'black',
+                  bgcolor: 'whitesmoke',
+                  mb:'10px',
+                  width:'90%',
+                  ml:2,
+                  '&:hover': {
+                    bgcolor: 'rgba(196, 196, 196, 0.47)',
+                    color: 'rgba(0, 0, 0, 0.42)'
+                  }
+                }} replace>
+                  <LogoutOutlinedIcon sx={{ position: "absolute", left: "25%" }} /> Logout
+                </Button>
 
         </Drawer>}
 

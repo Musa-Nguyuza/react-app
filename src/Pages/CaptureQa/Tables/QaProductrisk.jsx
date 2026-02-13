@@ -124,7 +124,7 @@ const QaProdRisk = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Phrase {selectedFilters.subGrouping}</strong></TableCell>
+              <TableCell><strong>Phrase</strong></TableCell>
               <TableCell><strong>Category</strong></TableCell>
               <TableCell><strong>Compliant</strong></TableCell>
               <TableCell><strong>Comment</strong></TableCell>

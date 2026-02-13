@@ -18,7 +18,7 @@ const ViewFindings = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
 useEffect(() => {
-  fetch('https://riskapp-backend.onrender.com/api/dispute/data')
+  fetch('http://localhost:3001/api/dispute/data')
     .then((res) => res.json())
     .then((data)=> setData(data))
     .catch((err) => {
@@ -57,7 +57,7 @@ useEffect(() => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           InputLabelProps={{ shrink: true }}
-          sx={{ width: '20%', border: '1px solid black' }}
+          sx={{minWidth:'220px', width: '20%', border: '1px solid black' }}
           slotProps={{
             input: {
               startAdornment: (

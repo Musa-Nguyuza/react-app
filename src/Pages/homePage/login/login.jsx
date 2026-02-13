@@ -30,7 +30,7 @@ const Login = () => {
     const handleLogin = async () => {
         try {
             setBtnText("Loading...");
-            const res = await axios.post('https://riskapp-backend.onrender.com/api/login', { username, password });
+            const res = await axios.post('http://localhost:3001/api/login', { username, password });
             localStorage.setItem('token', res.data.token);
 
 

@@ -6,7 +6,7 @@ const useFetchTableData = (id, tableKey) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://riskapp-backend.onrender.com/api/data/${id}`)
+    fetch(`http://localhost:3001/api/data/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch data');
         return res.json();
