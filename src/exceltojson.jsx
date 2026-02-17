@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
-import * as XLSX from 'xlsx';
+// import React, { useState } from 'react';
+// import * as XLSX from 'xlsx';
 
-function ExcelToJsonConverter() {
-  const [jsonData, setJsonData] = useState([]);
+// function ExcelToJsonConverter() {
+//   const [jsonData, setJsonData] = useState([]);
 
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
+//   const handleFileUpload = (event) => {
+//     const file = event.target.files[0];
 
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const data = new Uint8Array(e.target.result);
-      const workbook = XLSX.read(data, { type: 'array' });
+//     const reader = new FileReader();
+//     reader.onload = (e) => {
+//       const data = new Uint8Array(e.target.result);
+//       const workbook = XLSX.read(data, { type: 'array' });
 
-      // Assuming the first sheet
-      const sheetName = workbook.SheetNames[0];
-      const worksheet = workbook.Sheets[sheetName];
+//       // Assuming the first sheet
+//       const sheetName = workbook.SheetNames[0];
+//       const worksheet = workbook.Sheets[sheetName];
 
-      const json = XLSX.utils.sheet_to_json(worksheet);
-      setJsonData(json);
-    };
+//       const json = XLSX.utils.sheet_to_json(worksheet);
+//       setJsonData(json);
+//     };
 
-    reader.readAsArrayBuffer(file);
-  };
+//     reader.readAsArrayBuffer(file);
+//   };
 
-  return (
-    <div>
-      <h2>Excel to JSON Converter</h2>
-      <input type="file" accept=".xlsx, .xls" onChange={handleFileUpload} />
-      <pre>{JSON.stringify(jsonData, null, 2)}</pre>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h2>Excel to JSON Converter</h2>
+//       <input type="file" accept=".xlsx, .xls" onChange={handleFileUpload} />
+//       <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+//     </div>
+//   );
+// }
 
-export default ExcelToJsonConverter;
+// export default ExcelToJsonConverter;

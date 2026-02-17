@@ -16,7 +16,7 @@
     "@mui/material": "^7.1.2",
     "@mui/x-date-pickers": "^8.5.3",
     "@tailwindcss/vite": "^4.1.18",
-    "axios": "^1.10.0",
+    "axios": "^1.13.5",
     "cors": "^2.8.5",
     "dayjs": "^1.11.13",
     "express": "^5.1.0",
