@@ -26,7 +26,7 @@ import QaResults from './Pages/viewTables/QaResults/index.jsx'
 import Login from './Pages/homePage/login/login.jsx'
 import SecureRoute from './Pages/privateRoute/SecureRoute.jsx'
 import Register from './Pages/homePage/register/register.jsx'
-import ExcelToJsonConverter from './exceltojson.jsx'
+// import ExcelToJsonConverter from './exceltojson.jsx'
 import RemediationDetails from './Pages/viewTables/Findings/PoliciesTable/PolicyFinding/RemediationDetails.jsx'
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login/> } />
-        <Route path="/json" element={<ExcelToJsonConverter/> } />
+        {/* <Route path="/json" element={<ExcelToJsonConverter/> } /> */}
         <Route path="/Register" element={<Register/> } />
         <Route path="/homepage" element={<SecureRoute> <ViewHomePage/> </SecureRoute> } />
 
