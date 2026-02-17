@@ -23,7 +23,7 @@ const RemediationDetails = () =>
 
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/dispute/data').then(res => {
+    axios.get('https://riskapp-backend.onrender.com/api/dispute/data').then(res => {
       const findingsList = res.data;
       const selectedFinding = findingsList.find(f => f.id === parseInt(id));
 
@@ -41,7 +41,7 @@ const RemediationDetails = () =>
 
 
 
-    axios.put(`http://localhost:3001/api/dispute/data/${updatedData.id}`, updatedData)
+    axios.put(`https://riskapp-backend.onrender.com/api/dispute/data/${updatedData.id}`, updatedData)
         .then(() => {
         window.alert('Updated successfully');
         });

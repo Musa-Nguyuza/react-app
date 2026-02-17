@@ -18,7 +18,7 @@ const ViewFindings = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
 useEffect(() => {
-  fetch('http://localhost:3001/api/dispute/data')
+  fetch('https://riskapp-backend.onrender.com/api/dispute/data')
     .then((res) => res.json())
     .then((data)=> setData(data))
     .catch((err) => {
